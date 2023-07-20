@@ -1,0 +1,24 @@
+.contacts {
+  .fa {
+    color: $color-contacts-ico;
+    font-size: 2rem;
+  }
+
+  a {
+    @include font-numbers($size: 2rem);
+    text-decoration: none;
+  }
+
+  .contacts__tel {
+    max-width: 235px;
+    i {
+      padding-right: 6px;
+    }
+  }
+
+  .contacts__email {
+    i {
+      padding-right: 10px;
+    }
+  }
+}

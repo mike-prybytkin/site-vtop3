@@ -1,0 +1,16 @@
+.logo {
+  position: relative;
+  height: 83px;
+  width: 359px;
+  background-image: url('../assets/png/logo-bg.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  .logo__link {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

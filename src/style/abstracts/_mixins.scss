@@ -1,0 +1,27 @@
+@mixin font-primary ($size: 1.6rem, $weight: 400, $color: $color-text-light) {
+  font-family: 'Raleway', 'Verdana', 'Geneva', sans-serif;
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+}
+
+@mixin font-additionary ($size: 1.4rem, $weight: 700, $color: $color-text-light) {
+  font-family: 'Inter', 'Arial Narrow', 'Arial', sans-serif;
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+}
+
+@mixin font-numbers ($size: 1.4rem, $weight: 700, $color: $color-text-light) {
+  font-family: 'Yantramanav', 'Arial' , 'Arial Narrow', sans-serif;
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+}
+
+@mixin flex ($justify: center, $align: center, $flow: row wrap) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-flow: $flow;
+}

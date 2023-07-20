@@ -1,0 +1,34 @@
+%transition {
+  transition: all .3s ease-in-out;
+}
+
+%nav-linear-border-common-styles {
+  background-size: 30px 30px, calc(100% - 59px) 3px, 30px 30px, 3px calc(100% - 59px);
+  background-position: top left,top center,top right,center right, bottom right,bottom center,bottom left,center left;
+  background-repeat: no-repeat;
+  border: none;
+}
+
+%nav-linear-border {
+  background-image: 
+    radial-gradient(circle at 100% 100%, transparent 27px, $color-nav-border-1 27px, $color-nav-border-1 30px, transparent 30px), 
+    linear-gradient(to right, transparent, transparent), 
+    radial-gradient(circle at 0% 100%, transparent 27px, $color-nav-border-1 27px, $color-nav-border-1 30px, transparent 30px), 
+    linear-gradient(to bottom, transparent, transparent), 
+    radial-gradient(circle at 0% 0%, transparent 27px, $color-nav-border-1 27px, $color-nav-border-1 30px, transparent 30px), 
+    linear-gradient(to left, $color-nav-border-1 0%, $color-nav-border-2 50%), 
+    radial-gradient(circle at 100% 0%, transparent 27px, $color-nav-border-2 27px, $color-nav-border-2 30px, transparent 30px), 
+    linear-gradient(to top, $color-nav-border-2 50%, $color-nav-border-1 100%);
+  @extend %nav-linear-border-common-styles;
+}
+
+%nav-linear-border-right {
+  background-image: 
+    linear-gradient(to top, transparent, transparent),
+    linear-gradient(to right, transparent, transparent), 
+    radial-gradient(circle at 0% 100%, transparent 27px, $color-nav-border-1 27px, $color-nav-border-1 30px, transparent 30px), 
+    linear-gradient(to bottom, $color-nav-border-1 0%, $color-nav-border-2 50%), 
+    radial-gradient(circle at 0% 0%, transparent 27px, $color-nav-border-2 27px, $color-nav-border-2 30px, transparent 30px), 
+    linear-gradient(to left, $color-nav-border-2 50%, $color-nav-border-1 100%);
+  @extend %nav-linear-border-common-styles;
+}

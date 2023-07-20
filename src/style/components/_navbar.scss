@@ -1,0 +1,128 @@
+%text-hover {
+  color: $color-text-light;
+  -webkit-text-stroke: 1px;
+}
+
+.navbar {
+  .nav-item {
+    font-size: 1.6rem;
+
+    &:hover .nav-link {
+      @extend %text-hover;
+    }
+  }
+
+  .nav-item.dropend,
+  .nav-item.dropstart {
+    &:hover .nav-link_2 {
+      @extend %text-hover;
+    }
+  }
+
+  .nav-link {
+    color: $color-text-light;
+    &:focus {
+      outline: none;
+      color: $color-text-light;
+    }
+    &.dropdown-toggle.show {
+      @extend %text-hover;
+    }
+  }
+}
+
+nav.navbar .dropdown:hover > .dropdown-menu {
+  display: block; 
+} 
+
+.navbar-nav {
+  .nav-item {
+    &_all-services,
+    &_about {
+      text-decoration: underline;
+      color: $color-text-light;
+    }
+  } 
+}
+
+.navbar-nav {
+  gap: 3.5vw;
+}
+
+ul.dropdown-menu {
+  min-width: 270px;
+  background-color: $color-bg-header;
+  li {
+    a.dropdown-item {
+      color: $color-text-light;
+      font-size: 1.6rem;
+      line-height: 1.6rem;
+      white-space: normal;
+      padding: 10px 25px;
+
+      &:hover,
+      &:focus {
+        background: transparent;
+        -webkit-text-stroke: 1px;
+        outline: none;
+      }
+    }
+  }
+}
+
+nav.navbar .dropend:hover > .dropdown-menu {
+  display: block;
+  left: 100%;
+  top: 0;
+}
+
+nav.navbar .dropstart:hover > .dropdown-menu {
+  display: block;
+  right: 100%;
+  top: 0;
+}
+
+.dropdown {
+  .dropdown-menu {
+    border-radius: 0 0 0 30px;
+    @extend %nav-linear-border;
+  }
+
+  .dropdown-menu_border-right {
+    border-radius: 0 0 30px 0;
+    @extend %nav-linear-border-right;
+  }
+}
+
+.dropend {
+  .dropdown-menu {
+    border-radius: 0  30px 30px 0;
+    background-image: none;
+  }
+}
+
+.dropstart {
+  .dropdown-menu {
+    border-radius: 30px 0 0 30px;
+    background-image: none;
+  }
+}
+
+.dropstart {
+  .dropdown-toggle.nav-link_right-caret {
+    white-space: nowrap;
+    &::after {
+      display: inline-block;
+      margin-right: 0.1em;
+      vertical-align: 0.1em;
+      content: "";
+      border-top: 0.3em solid transparent;
+      border-right: 0.3em solid;
+      border-bottom: 0.3em solid transparent;
+    }
+  
+    &::before {
+      display: none;
+    }
+  }
+} 

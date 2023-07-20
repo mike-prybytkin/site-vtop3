@@ -1,0 +1,8 @@
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  @include font-primary ($size: 1.6rem, $weight: 400, $color: $color-text-light);
+}
