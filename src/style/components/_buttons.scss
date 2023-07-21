@@ -1,0 +1,14 @@
+.button {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.button_oval-colored {
+  color: $color-text-dark;
+  padding: 0 40px;
+  background: $color-bg-oval-button;
+  font-size: 1.8rem;
+  height: 64px;
+  border-radius: 32px;
+}

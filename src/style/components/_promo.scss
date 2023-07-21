@@ -1,0 +1,41 @@
+.promo__wrapper {
+  height: 870px;
+  .promo__col {
+    position: relative;
+    &_1 {
+      z-index: 2;
+    }
+    &_2 {
+      z-index: 1;
+    }
+  }
+}
+
+.promo__title {
+  margin-top: 225px;
+  line-height: 13rem;
+  @include font-primary($size: 10rem, $weight: 700);
+  text-transform: uppercase;
+}
+
+.promo__cards {
+  max-width: 1120px;
+  .promo__card {
+    .card {
+      background: $color-bg-promo-card;
+      .card-text {
+        @include font-additionary($size: 2rem);
+        line-height: 2.5rem;
+      }
+  
+      .fa-check-circle {
+        font-size: 3rem;
+        color: $color-icon-promo;
+      }
+    }
+  }
+}
+
+.promo__order-btn {
+  margin-top: 70px;
+}
