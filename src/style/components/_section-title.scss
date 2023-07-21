@@ -1,0 +1,8 @@
+.section-title {
+  @include font-primary($size: 7rem, $weight: 700);
+  text-transform: uppercase;
+
+  &_colored {
+    color: $color-text-section-title-colored;
+  }
+}

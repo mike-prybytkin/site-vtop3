@@ -1,0 +1,28 @@
+.certified-partners {
+  height: 560px;
+  background: $color-bg-promo-card;
+  @include flex($flow: column wrap);
+  gap: 40px;
+
+  .certified-partners__title {
+    max-width: 1450px;
+    text-align: center;
+  }
+
+  .certified-partners__links {
+    @include flex();
+    gap: 120px;
+
+    .certified-partners__link {
+
+      img {
+        @extend %transition;
+        background: $color-light;
+        border-radius: 5px;
+        &:hover {
+          transform: scale(1.02);
+        }
+      }
+    }
+  }
+}
