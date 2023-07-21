@@ -1,0 +1,37 @@
+.price-card {
+  padding: 60px 40px;
+  width: 577px;
+  min-height: 555px;
+  background: $color-light;
+  border: 4px solid $color-bg-oval-button;
+  @include flex($flow: column nowrap, $justify: space-between,);
+
+  .price-card__title {
+    height: 80px;
+    @include font-primary($size: 3.6rem, $color: $color-text-dark, $weight: 700);
+    text-align: center;
+    line-height: 3.9rem;
+  }
+
+  .price-card__info {
+    @include font-primary($size: 2.4rem, $color: $color-text-dark);
+    line-height: 3rem;
+
+    .price-card__for-whom,
+    .price-card__target {
+      span {
+        font-weight: 700;
+        border-bottom: 4px solid $color-bg-oval-button;
+      }
+    }
+  }
+
+  .price-card__price {
+    height: 60px;
+    @include font-primary($size: 2.4rem, $color: $color-text-dark, $weight: 700);
+    &_free {
+      color: $color-text-section-title-colored;
+      font-size: 3.6rem;
+    }
+  }
+}

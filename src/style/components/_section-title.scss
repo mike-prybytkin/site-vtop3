@@ -1,8 +1,26 @@
+.section-title-container {
+  &_border-left {
+    border-left: 5px solid $color-text-section-title-colored;
+    padding-left: 38px;
+  }
+}
+
 .section-title {
   @include font-primary($size: 7rem, $weight: 700);
   text-transform: uppercase;
 
   &_colored {
     color: $color-text-section-title-colored;
+  }
+}
+
+.section-title-comment {
+  @include font-primary($size: 5.4rem);
+
+  &_bold {
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 6rem;
+    margin-top: 38px;
   }
 }
