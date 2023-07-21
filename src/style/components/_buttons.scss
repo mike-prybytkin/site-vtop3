@@ -5,10 +5,15 @@
 }
 
 .button_oval-colored {
+  @extend %transition;
   color: $color-text-dark;
   padding: 0 40px;
   background: $color-bg-oval-button;
   font-size: 1.8rem;
   height: 64px;
   border-radius: 32px;
+
+  &:hover {
+    box-shadow: $shadow-button;
+  }
 }
