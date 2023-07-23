@@ -1,0 +1,35 @@
+.team-card {
+  position: relative;
+  background-image: url('../assets/png/bg-team-swiper.png');
+  background-repeat: no-repeat;
+  background-position: 360px 25px;
+  height: 600px;
+  margin: auto;
+
+  .team-card__content {
+    position: relative;
+    text-align: center;
+  
+    .team-card__img {
+      width: auto;
+      height: 600px;
+    }
+  
+    .team-card__info {
+      position: absolute;
+      bottom: 90px;
+      font-size: 2rem;
+  
+      .team-card__name {
+        color: $color-text-additionary;
+        margin-bottom: 0;
+        text-align: left;
+      }
+  
+      .team-card__position {
+        color: $color-text-light;
+        text-align: left;
+      }
+    }
+  }
+}

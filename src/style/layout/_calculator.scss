@@ -1,0 +1,25 @@
+.calculator {
+  height: 855px;
+  background: $color-1-bg-sections;
+  
+  .calculator-wrapper {
+    padding: 100px 0 0 0;
+    height: 100%;
+
+    .calculator__title {
+      max-width: 1000px;
+      .calculator__title-comment {
+        width: 950px
+      }
+    }
+  }
+
+  .calculator__form {
+    margin-top: 56px;
+  }
+
+  .calculator__progress-bar {
+    margin-top: 53px;
+  }
+}
+

@@ -1,0 +1,45 @@
+.progress-container {
+  @include flex($justify: space-between, $align: start);
+  position: relative;
+  margin-bottom: 30px;
+  width: 305px;
+
+  &::before {
+    content: "";
+    background: $color-bg-empty-progres-bar;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 4px;
+    width: 100%;
+    z-index: 0;
+    border-radius: 2px;
+  }
+}
+
+.progress-line {
+  background: $color-bg-fill-progres-bar;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 4px;
+  width: 0%;
+  z-index: 1;
+  transition: 0.4s ease;
+}
+
+.circle {
+  @include flex();
+  background: $color-bg-empty-progres-bar;
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+  transition: .4s ease;
+  z-index: 2;
+}
+
+.circle.active {
+  background: $color-bg-fill-progres-bar;
+}
