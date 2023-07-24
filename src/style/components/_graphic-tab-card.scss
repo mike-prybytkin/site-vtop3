@@ -1,0 +1,54 @@
+.graphic-tab-card {
+  width: 250px;
+  height: 115px;
+  padding: 12px;
+  border: solid 1px $color-bg-buttons-our-cases;
+  font-size: 1.4rem;
+
+  .graphic-tab-card__ico {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 2rem;
+    color: $color-light;
+  }
+
+  .graphic-tab-card__title {
+    font-weight: 700;
+    font-size: 2.4rem;
+  }
+
+  .graphic-tab-card__number {
+    font-weight: 700;
+    font-size: 2rem;
+  }
+}
+
+.graphic-tab-card_visitors {
+  .graphic-tab-card__ico {
+    background: $color-text-section-title-colored;
+  }
+  .graphic-tab-card__title {
+    color: $color-text-section-title-colored;
+  }
+}
+
+.graphic-tab-card_request {
+  .graphic-tab-card__ico {
+    background: $color-request-tab;
+  }
+  .graphic-tab-card__title {
+    color: $color-request-tab;
+  }
+}
+
+.graphic-tab-card_sales {
+  .graphic-tab-card__ico {
+    background: $color-sales-tab;
+  }
+  .graphic-tab-card__title {
+    color: $color-sales-tab;
+  }
+}

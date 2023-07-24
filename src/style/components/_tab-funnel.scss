@@ -1,0 +1,71 @@
+.funnel-tab {
+  .funnel-tab__number {
+    font-weight: 700;
+    color: $color-text-section-title-colored;
+    font-size: 3rem;
+  }
+}
+
+.funnel-tab-info {
+  position: relative;
+  @include flex($justify: start);
+  gap: 15px;
+  font-size: 2rem;
+  width: inherit;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: $color-bg-buttons-our-cases;
+    bottom: 0;
+    transform: translateY(50%);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    background: $color-bg-buttons-our-cases;
+    width: calc(100% - 9px);
+    bottom: 0;
+    right: 0;
+  }
+
+  .funnel-tab-info__ico {
+    font-size: 3rem;
+    min-width: 30px;
+    text-align: center;
+  }
+
+  .funnel-tab-info__comment {
+    margin: 0;
+  }
+}
+
+.funnel-tab-income {
+  padding-top: 40px;
+  font-size: 1.4rem;
+
+  .funnel-tab-income__card {
+    border: solid 1px $color-bg-buttons-our-cases;
+    padding: 10px;
+  }
+
+  .funnel-tab-income__ico {
+    display: block;
+    font-size: 3rem;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border: solid 1px $color-text-section-title-colored;
+    border-radius: 50%;
+  }
+
+  .funnel-tab-income__cost {
+    font-size: 2rem;
+  }
+}

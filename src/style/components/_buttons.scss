@@ -2,10 +2,10 @@
   border: none;
   outline: none;
   background: transparent;
+  @extend %transition;
 }
 
 .button_oval-colored {
-  @extend %transition;
   color: $color-text-dark;
   padding: 0 40px;
   background: $color-bg-oval-button;
@@ -15,5 +15,26 @@
 
   &:hover {
     box-shadow: $shadow-button;
+  }
+}
+
+.nav-tabs .nav-link.button_our-cases-slide {
+  @extend %transition;
+  font-size: 1.8rem;
+  width: 300px;
+  height: 66px;
+  border-radius: 33px;
+  background: transparent;
+  text-align: center;
+  padding-top: 16px;
+  color: $color-text-dark;
+
+  &:hover {
+    color: $color-text-section-title-colored;
+  }
+  
+  &.active {
+    box-shadow: $shadow-slider-button;
+    background: $color-light;
   }
 }

@@ -1,0 +1,18 @@
+.our-cases {
+  background: $color-2-bg-sections;
+  height: 1215px;
+
+  .our-cases-wrapper {
+    padding: 100px 0 0 0;
+    height: 100%;
+
+    .our-cases__slider {
+      position: relative;
+      margin-top: 30px;
+    }
+
+    .our-cases__all-cases-btn {
+      margin-top: 54px;
+    }
+  }
+}

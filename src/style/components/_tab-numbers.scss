@@ -1,0 +1,38 @@
+.numbers-tab {
+  font-size: 1.6rem;
+
+  .numbers-tab__announce {
+    width: 135px;
+    height: 50px;
+    background: $color-bg-buttons-our-cases;
+    text-align: center;
+    padding-top: 10px;
+
+    .numbers-tab__announce-ico {
+      display: inline-block;
+      margin-right: 10px;
+      color: $color-light;
+      width: 22px;
+      height: 22px;
+      text-align: center;
+      line-height: 22px;
+      border-radius: 50%;
+    }
+
+    &_problem {
+      border: solid 1px $color-problem;
+      color: $color-problem;
+      .numbers-tab__announce-ico {
+        background: $color-problem;
+      }
+    }
+
+    &_result {
+      border: solid 1px $color-result;
+      color: $color-result;
+      .numbers-tab__announce-ico {
+        background: $color-result;
+      }
+    }
+  }
+}

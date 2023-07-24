@@ -1,0 +1,50 @@
+.numbers-tab-table {
+  font-weight: 700;
+  thead {
+    text-align: center;
+  
+    td {
+      height: 60px;
+      vertical-align: middle;
+      color: #BABABA;
+    }
+  }
+
+  tbody {
+    tr {
+      height: 60px;
+  
+      td {
+        width: 33%;
+        vertical-align: middle;
+        padding-left: 5%;
+  
+        span {
+          font-weight: 400;
+          color: #BABABA;
+        }
+      }
+    }
+  }
+
+  .numbers-tab-table__ico {
+    display: inline-block;
+    margin-right: 10px;
+    text-align: center;
+    font-size: 2rem;
+
+    &_visitors {
+      color: $color-text-section-title-colored;
+    }
+    &_request {
+      color: $color-request-tab;
+    }
+    &_sales {
+      color: $color-sales-tab;
+    }
+  }
+
+  .fa-caret-up {
+    color: $color-result;
+  }
+}

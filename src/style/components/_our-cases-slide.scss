@@ -1,0 +1,32 @@
+.our-cases-slide {
+  background: $color-light;
+  border: 3px solid $color-text-section-title-colored;
+  padding: 40px 30px;
+  width: 1790px !important;
+  height: 705px;
+  margin-left: 25px;
+
+  .our-cases-slide__modal-btn {
+    margin-top: 20px;
+  }
+}
+
+.our-cases-slide__title {
+  @include font-primary($size: 3.6rem, $weight: 700, $color: $color-text-dark);
+  margin-bottom: 45px;
+}
+
+.our-cases-slide__button-wrapper {
+  max-width: 978px;
+  height: 78px;
+  background: $color-bg-buttons-our-cases;
+  border-radius: 39px;
+}
+
+.our-cases-slide__info {
+  padding-top: 20px;
+  .our-cases-slide__info-img {
+    width: 300px;
+    height: 200px;
+  }
+}
