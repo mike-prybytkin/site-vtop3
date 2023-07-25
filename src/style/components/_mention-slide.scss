@@ -1,0 +1,59 @@
+.swiper-wrapper .swiper-slide {
+  width: 426px;
+}
+
+.mention-slide {
+  @include flex($justify: space-between, $align: start, $flow: column nowrap);
+  height: 550px;
+  width: 426px;
+  color: $color-light;
+  font-size: 1.4rem;
+}
+
+.mention-slide__client {
+  @include flex($justify: start);
+  gap: 15px;
+  padding-left: 4px;
+
+  .mention-slide__avatar {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: $color-bg-avatar;
+    border: 3px solid $color-2-bg-sections;
+  }
+
+  .mention-slide__info {
+    font-size: 1.6rem;
+    width: 200px;
+    font-weight: 700;
+
+    .mention-slide__name {
+      color: $color-text-section-title-colored;
+      margin-bottom: 15px;
+    }
+
+    .mention-slide__position {
+      margin: 0;
+      line-height: 1.6rem;
+    }
+  }
+}
+
+.mention-slide__comment {
+  height: 160px;
+  background-image: url('../assets/png/bg-comment.png');
+  background-repeat: no-repeat;
+  padding: 50px 30px;
+}
+
+.mention-slide__video {
+  width: 426px;
+  height: 260px;
+  background: $color-bg-avatar;
+
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
+}

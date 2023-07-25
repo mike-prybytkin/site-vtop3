@@ -1,0 +1,25 @@
+.mention {
+  background: $color-1-bg-sections;
+  height: 1180px;
+
+  .mention-wrapper {
+    padding: 100px 0 0 0;
+    height: 100%;
+
+    .mention-swiper {
+      padding-top: 25px;
+    }
+
+    .mention__promo {
+      margin-top: 25px;
+      font-size: 2.4rem;
+      line-height: 3rem;
+      max-width: 780px;
+      color: $color-light;
+    }
+
+    .mention__btn {
+      margin-top: 24px;
+    }
+  }
+}
