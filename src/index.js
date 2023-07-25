@@ -12,4 +12,7 @@ formCalculatorValidate();
 formCalculatorProgressBar();
 ourCasesSwiper();
 mentionSwiper();
-advantagesTabsFirstLoad();
+
+window.addEventListener('load', () => {
+  advantagesTabsFirstLoad();
+});

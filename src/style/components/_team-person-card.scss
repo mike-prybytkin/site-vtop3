@@ -1,0 +1,54 @@
+.team-person-card {
+  background: $color-1-bg-sections;
+  width: 580px;
+  height: 555px;
+  border: 3px solid $color-text-section-title-colored;
+  font-size: 3.6rem;
+  font-weight: 700;
+  color: $color-light;
+
+  .team-person-card__up {
+    @include flex($justify: end, $align: end);
+    background: $color-2-bg-sections;
+
+    .team-person-card__name {
+      padding-bottom: 30px;
+      flex-grow: 1;
+      text-align: center;
+    }
+
+    .team-person-card__photo {
+      width: 345px;
+      height: 345px;
+    }
+  }
+
+  .team-person-card__down {
+    border-top: 3px solid $color-text-section-title-colored;
+    padding: 0 30px;
+
+    .team-person-card__position {
+      color: $color-text-section-title-colored;
+      margin-top: 25px;
+    }
+
+    .team-person-card__sertificates {
+      font-size: 2.4rem;
+
+      .team-person-card__links {
+        @include flex($justify: start, $align: start);
+
+        a {
+          @extend %transition;
+          &:hover {
+            transform: scale(1.1);
+          }
+
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+    }
+  }
+}
