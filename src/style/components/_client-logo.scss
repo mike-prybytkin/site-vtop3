@@ -1,0 +1,12 @@
+.client-logo {
+  @extend %transition;
+  filter: grayscale(1);
+
+  &:hover {
+    filter: none;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}

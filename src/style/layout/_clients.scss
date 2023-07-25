@@ -1,0 +1,27 @@
+.clients {
+  height: 625px;
+
+  .clients-wrapper {
+    padding: 100px 0 0 0;
+    height: 100%;
+
+    .clients__title {
+      text-align: center;
+      margin: auto;
+    }
+
+    .clients__swiper {
+      margin-top: 45px;
+      max-width: 1170px;
+
+      .swiper-wrapper {
+        align-items: center;
+        row-gap: 30px;
+      }
+      
+      .clients__swiper-btn {
+        display: none;
+      }
+    }
+  }
+}

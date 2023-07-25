@@ -6,12 +6,14 @@ import formCalculatorProgressBar from './script/form-calculator/form-calculator-
 import ourCasesSwiper from './script/our-cases-swiper/our-cases-swiper';
 import mentionSwiper from './script/mention-swiper/mention-swiper';
 import advantagesTabsFirstLoad from './script/advantages-tabs/advantages-tabs';
+import clientsSwiper from './script/clients-swiper/clients-swiper';
 
 promoSwiper();
 formCalculatorValidate();
 formCalculatorProgressBar();
 ourCasesSwiper();
 mentionSwiper();
+clientsSwiper();
 
 window.addEventListener('load', () => {
   advantagesTabsFirstLoad();
