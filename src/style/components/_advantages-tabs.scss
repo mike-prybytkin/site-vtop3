@@ -1,0 +1,90 @@
+.advantages-tabs {
+  display: flex;
+  flex-direction: row;
+  max-width: 1794px;
+  height: 431px;
+
+  .advantages-tabs__content {
+    display: none;
+    order: 1;
+    flex-grow: 1;
+    background: $color-light;
+    color: $color-text-dark;
+    padding: 40px;
+
+    &:target {
+      display: block;
+    }
+
+    &_first-load {
+      display: block;
+    }
+  }
+}
+
+.advantages-tabs__links {
+  display: flex;
+  flex-direction: column;
+  
+  &_left {
+    order: 0;
+  }
+  &_right {
+    order: 2;
+  }
+  
+  .advantages-tabs__link {
+    @extend %transition;
+    @include flex($justify: start, $flow: row nowrap);
+    gap: 20px;
+    line-height: 4rem;
+    width: 425px;
+    height: 143px;
+    text-decoration: none;
+    color: $color-light;
+    font-size: 3.2rem;
+    background: transparent;
+    padding: 30px;
+    margin: 0;
+
+    &:hover {
+      color: $color-text-section-title-colored;
+    }
+
+    img {
+      width: 42px;
+      height: 42px;
+    }
+  }
+}
+
+.advantages-tabs > #content-1:target ~ .advantages-tabs__links > a[href="#content-1"],
+.advantages-tabs > #content-2:target ~ .advantages-tabs__links > a[href="#content-2"],
+.advantages-tabs > #content-3:target ~ .advantages-tabs__links > a[href="#content-3"],
+.advantages-tabs > #content-4:target ~ .advantages-tabs__links > a[href="#content-4"],
+.advantages-tabs > #content-5:target ~ .advantages-tabs__links > a[href="#content-5"] {
+  background: $color-1-bg-sections;
+  cursor: default;
+  &:hover {
+    color: $color-light;
+  }
+}
+
+.advantages-tabs > #content-1.advantages-tabs__content_first-load  ~ .advantages-tabs__links > a[href="#content-1"] {
+  background: $color-1-bg-sections;
+  cursor: default;
+  &:hover {
+    color: $color-light;
+  }
+}
+
+.advantages-tabs__content-title {
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+
+.advantages-tabs__content-text {
+  font-size: 2.4rem;
+  line-height: 3rem;
+  margin: 15px;
+}
