@@ -1,0 +1,28 @@
+.company-contacts {
+  .company-contacts__show {
+    a,
+    span {
+      @extend %transition;
+      text-decoration: none;
+      color: $color-text-light;
+      cursor: pointer;
+      &:hover {
+        color: $color-text-additionary;
+      }
+    }
+
+    a {
+      display: none;
+    }
+
+    &.active {
+      a {
+        display: block;
+      }
+  
+      span {
+        display: none;
+      }
+    }
+  }
+}
