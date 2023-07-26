@@ -15,6 +15,4 @@ ourCasesSwiper();
 mentionSwiper();
 clientsSwiper();
 
-window.addEventListener('load', () => {
-  advantagesTabsFirstLoad();
-});
+setTimeout(() => advantagesTabsFirstLoad(), 0);

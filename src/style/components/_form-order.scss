@@ -1,0 +1,57 @@
+.form-order {
+  color: $color-text-light;
+  font-size: 1.4rem;
+
+  .form-order__label {
+    margin-top: 10px;
+
+    &_comment {
+      margin-top: 20px;
+    }
+  }
+
+  .form-order__input {
+    height: 38px;
+    border-radius: 30px;
+    padding: 0 15px;
+    font-size: 2rem;
+
+    &_comment {
+      height: 84px;
+      line-height: 2rem;
+      resize: none;
+    }
+  }
+
+  .form-order__check {
+    margin: 15px 0 0 10px;
+
+    .form-order__check-input {
+      width: 27px;
+      height: 24px;
+      background: transparent;
+      border: solid 1px $color-text-section-title-colored;
+
+      &:checked {
+        background-image: url('../assets/png/checked.png');
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    .form-order__label {
+      font-size: 1.8rem;
+      margin: 0 0 0 10px;
+      cursor: pointer;
+      line-height: 2rem;
+    }
+  }
+
+  .form-order__btn {
+    margin-top: 45px;
+  }
+}

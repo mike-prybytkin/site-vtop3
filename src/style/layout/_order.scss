@@ -1,0 +1,46 @@
+.order {
+  background: $color-2-bg-sections;
+  height: 705px;
+
+  .order-wrapper {
+    padding: 0;
+    height: 100%;
+    @include flex($align: stretch);
+    gap: 70px;
+  }
+}
+
+.order__title-wrapper {
+  margin-top: 140px;
+
+  .section-title {
+    font-size: 10rem;
+  }
+  .section-title-comment {
+    margin: 0;
+  }
+
+  .order__title-comment {
+    margin-top: 40px;
+    max-width: 620px;
+    font-size: 3.6rem;
+    color: $color-text-light;
+    line-height: 4.7rem;
+  }
+}
+
+.order__form-wrapper {
+  flex-basis: 680px;
+  padding: 130px 0 0 45px;
+  box-shadow: $shadow-order-form;
+
+  .order__form-title {
+    font-size: 3.6rem;
+    font-weight: 700;
+    color: $color-text-light;
+  }
+
+  .order__form {
+    margin: 10px 0 0 10px;
+  }
+}
