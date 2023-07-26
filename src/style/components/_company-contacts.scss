@@ -1,13 +1,18 @@
 .company-contacts {
   .company-contacts__show {
     a,
-    span {
+    span,
+    .fa {
+      font-size: inherit;
       @extend %transition;
       text-decoration: none;
       color: $color-text-light;
       cursor: pointer;
       &:hover {
         color: $color-text-additionary;
+        .fa {
+          color: $color-text-additionary;
+        }
       }
     }
 

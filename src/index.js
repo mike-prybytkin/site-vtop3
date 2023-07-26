@@ -7,6 +7,7 @@ import ourCasesSwiper from './script/our-cases-swiper/our-cases-swiper';
 import mentionSwiper from './script/mention-swiper/mention-swiper';
 import advantagesTabsFirstLoad from './script/advantages-tabs/advantages-tabs';
 import clientsSwiper from './script/clients-swiper/clients-swiper';
+import showHideContacts from './script/show-hide-contacts/show-hide-contacts';
 
 promoSwiper();
 formCalculatorValidate();
@@ -14,5 +15,6 @@ formCalculatorProgressBar();
 ourCasesSwiper();
 mentionSwiper();
 clientsSwiper();
+showHideContacts();
 
 setTimeout(() => advantagesTabsFirstLoad(), 0);

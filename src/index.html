@@ -15,22 +15,28 @@
   <header class="header">
     <section class="header__top">
       <div class="container-xxl p-0">
-        <div class="row justify-content-between">
+        <div class="row justify-content-between pe-4">
           <div class="logo col-3">
             <a class="logo__link" href="/" alt="vtop3.by"><img class="logo__link-img" src="./assets/svg/vtop3-by.svg"
                 alt="vtop3.by"></a>
           </div>
           <div class="contacts col-5 align-self-center">
             <div class="row">
-              <div class="col-4 contacts__tel">
+              <div class="col-5 contacts__tel company-contacts d-flex align-self-center">
                 <i class="fa fa-phone"></i>
-                <a href="tel:+375292577007">+375 (29)257-70-07</a>
+                <div class="company-contacts__show">
+                  <span><strong>+375</strong> показать номер <i class="fa fa-caret-down"></i></span>
+                  <a href="tel:+375292577007">+375 (29)257-70-07</a>
+                </div>
               </div>
-              <div class="col-4 contacts__email">
+              <div class="col-4 contacts__email company-contacts d-flex align-self-center">
                 <i class="fa fa-envelope"></i>
-                <a href="mailto:3577007by@gmail.com">3577007by@gmail.com</a>
+                <div class="company-contacts__show">
+                  <span>показать email <i class="fa fa-caret-down"></i></span>
+                  <a href="mailto:3577007by@gmail.com">3577007by@gmail.com</a>
+                </div>
               </div>
-              <div class="col-4 language">
+              <div class="col-3 language">
                 <span class="language__select">BY</span>
                 <img class="language__ico" src="./assets/png/by_flag.png" alt="by-flag">
                 <i class="fa fa-caret-down language__caret"></i>
@@ -1517,7 +1523,6 @@
   </main>
   <footer class="footer">
     <div class="footer-wrapper container-xxl">
-
       <div class="footer__col footer__col_details">
         <h5 class="footer__title">
           ЧКУП «Агентство рекламы и
@@ -1541,7 +1546,6 @@
           <p>Всего отзывов <span>12</span></p>
         </div>
       </div>
-
       <div class="footer__col footer__col_contacts">
         <div>
           <h5 class="footer__title">Пн-Пт</h5>
@@ -1575,7 +1579,6 @@
           </div>
         </div>
       </div>
-
       <div class="footer__col footer__col_adress">
         <div>
           <h5 class="footer__title">Юридический адрес</h5>

@@ -2,6 +2,7 @@
   .fa {
     color: $color-contacts-ico;
     font-size: 2rem;
+    line-height: 3rem;
   }
 
   a {
@@ -10,13 +11,14 @@
   }
 
   .contacts__tel {
-    max-width: 235px;
+    font-size: 2rem;
     i {
       padding-right: 6px;
     }
   }
 
   .contacts__email {
+    font-size: 2rem;
     i {
       padding-right: 10px;
     }
