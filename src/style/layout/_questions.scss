@@ -1,0 +1,19 @@
+.questions {
+  min-height: 1005px;
+  background: $color-1-bg-sections;
+
+  .questions-wrapper {
+    padding: 100px 0 0 0;
+    height: 100%;
+
+    .questions__title {
+      text-align: center;
+      margin: auto;
+    }
+
+    .questions__accordion {
+      margin-top: 30px;
+      padding-bottom: 30px;
+    }
+  }
+}
