@@ -582,21 +582,100 @@
           <div class="calculator__col-1 col-6">
             <div class="calculator__title section-title-container">
               <h2 class="section-title section-title_colored">калькулятор продвижения сайта</h2>
-              <p class="section-title-comment calculator__title-comment">Рассчитайте стоимость услуг по продвижению
-                (раскрутке) сайта</p>
+              <p class="section-title-comment calculator__title-comment">
+                Рассчитайте стоимость услуг по продвижению (раскрутке) сайта
+              </p>
             </div>
 
             <form class="calculator__form form-calculator needs-validation" novalidate>
-              <label for="validationSearchSystems" class="form-label form-calculator__label">
-                — В каких поисковых системах хотите продвигаться?
-              </label>
-              <div class="input-group form-calculator__input-group">
-                <input type="text" class="form-control form-calculator__input" placeholder="Гугл, Яндекс"
-                  aria-label="Гугл, Яндекс" id="validationSearchSystems" required>
+              <div class="form-calculator__slide form-calculator__slide_1">
+                <label for="validationSearchSystems" class="form-label form-calculator__label">
+                  — В каких поисковых системах хотите продвигаться?
+                </label>
+                <div class="input-group form-calculator__input-group">
+                  <input type="text" class="form-control form-calculator__input" placeholder="Имя" aria-label="Имя"
+                    id="validationSearchSystems" required autocomplete="off">
+                </div>
               </div>
-              <button class="button button_oval-colored form-calculator__btn" type="submit">Вперёд</button>
+
+              <div class="form-calculator__slide form-calculator__slide_2">
+                <label class="form-label form-calculator__label">
+                  Выберите тип вашего сайта:
+                </label>
+                <div class="dropdown dropdown-calculator">
+                  <a class="dropdown-toggle dropdown-calculator__btn dropdown-calculator__btn_site"
+                    id="formCalculatorDropdownSite" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Интернет-магазин
+                  </a>
+                  <ul class="dropdown-menu dropdown-calculator__list dropdown-calculator__list_site"
+                    aria-labelledby="formCalculatorDropdownSite">
+                    <li class="dropdown-calculator__item">Интернет-магазин</li>
+                    <li class="dropdown-calculator__item">Корпоративнй сайт</li>
+                    <li class="dropdown-calculator__item">Одностраничный сайт</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="form-calculator__slide form-calculator__slide_3">
+                <label for="validationSite" class="form-label form-calculator__label">
+                  Укажите адрес сайта:
+                </label>
+                <div class="input-group form-calculator__input-group">
+                  <input type="text" class="form-control form-calculator__input" placeholder="Адрес сайта"
+                    aria-label="Адрес сайта" id="validationSite" autocomplete="off">
+                </div>
+              </div>
+
+              <div class="form-calculator__slide form-calculator__slide_4">
+                <label class="form-label form-calculator__label">
+                  Выберите регион для продвижения:
+                </label>
+                <div class="dropdown dropdown-calculator">
+                  <a class="dropdown-toggle dropdown-calculator__btn dropdown-calculator__btn_region"
+                    id="formCalculatorDropdownRegion" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Россия
+                  </a>
+                  <ul class="dropdown-menu dropdown-calculator__list dropdown-calculator__list_region"
+                    aria-labelledby="formCalculatorDropdownRegion">
+                    <li class="dropdown-calculator__item">Россия</li>
+                    <li class="dropdown-calculator__item">Беларусь</li>
+                    <li class="dropdown-calculator__item">Казахстан</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="form-calculator__slide form-calculator__slide_5">
+                <label for="validationCost" class="form-label form-calculator__label">
+                  Рассчитайте стоимость услуг по продвижению (раскрутке) сайта
+                </label>
+                <div class="input-group form-calculator__input-group">
+                  <input type="text" class="form-control form-calculator__input" placeholder="Имя" aria-label="Имя"
+                    id="validationCost" autocomplete="off">
+                  <input type="text" class="form-control form-calculator__input" placeholder="Телефон"
+                    aria-label="Телефон" id="validationCost" autocomplete="off">
+                </div>
+              </div>
+
+              <div class="form-calculator__slide form-calculator__slide_6">
+                <div class="calculator__title calculator__title_slide section-title-container">
+                  <h2 class="section-title section-title_colored">спасибо за ваш заказ!</h2>
+                  <p class="section-title-comment calculator__title-comment">
+                    Стоимость заказа составляет от 500 ₽
+                  </p>
+                  <p class="section-title-comment calculator__title-comment">
+                    Для уточнения деталей/цены, мы свяжемся с вами в ближайшее время.
+                  </p>
+                </div>
+              </div>
+
+              <button class="button button_oval-colored form-calculator__btn form-calculator__btn_submit" type="submit">
+                Вперёд
+              </button>
+              <button class="button button_oval-colored form-calculator__btn form-calculator__btn_close">
+                Закрыть
+              </button>
             </form>
-            <div class="calculator__progress-bar">
+            <div class=" calculator__progress-bar">
               <div class="progress-container">
                 <div class="progress-line" id="progress-line"> </div>
                 <div class="circle"></div>

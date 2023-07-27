@@ -38,8 +38,13 @@
   width: 10px;
   transition: .4s ease;
   z-index: 2;
-}
 
-.circle.active {
-  background: $color-bg-fill-progres-bar;
+  &:last-of-type {
+    position: relative;
+    left: 2px;
+  }
+
+  &.active-circle {
+    background: $color-bg-fill-progres-bar;
+  }
 }

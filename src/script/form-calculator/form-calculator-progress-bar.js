@@ -4,13 +4,13 @@ const formCalculatorProgressBar = (currentActive = 1) => {
 
   stepCircles.forEach((circle, i) => {
     if (i < currentActive) {
-      circle.classList.add('active');
+      circle.classList.add('active-circle');
     } else {
-      circle.classList.remove('active');
+      circle.classList.remove('active-circle');
     }
   });
 
-  const activeCircles = document.querySelectorAll('.active');
+  const activeCircles = document.querySelectorAll('.active-circle');
   progress.style.width = `${((activeCircles.length - 1) / (stepCircles.length - 1)) * 100}%`;
 };
 
