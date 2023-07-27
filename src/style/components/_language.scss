@@ -1,11 +1,50 @@
 .language {
-  @include flex($justify: start);
-  gap: 5px;
-  font-size: 1.6rem;
-  color: $color-text-lang;
-  cursor: pointer;
+  position: relative;
 
-  .language__caret {
-    color: $color-text-light;
+  .language__toggle {
+    position: relative;
+    z-index: 2;
+    @include flex($justify: start);
+    gap: 5px;
+    font-size: 1.6rem;
+    color: $color-text-lang;
+    cursor: pointer;
+    width: fit-content;
+  
+    .language__caret {
+      color: $color-text-light;
+    }
+  }
+
+  .language__menu {
+    @extend %transition;
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    background: $color-bg-header;
+    padding: 15px;
+    top: 40px;
+    left: 5px;
+    list-style: none;
+    border-radius: 0 0 10px 10px;
+    box-shadow: $shadow-toggle-lang;
+    transform: translateY(-50px);
+
+    li {
+      margin: 6px 0;
+
+      a {
+        span {
+          font-weight: 400;
+        }
+      }
+    }
+  }
+
+  &.active {
+    .language__menu {
+      opacity: 1;
+      transform: translateY(0px);
+    }
   }
 }

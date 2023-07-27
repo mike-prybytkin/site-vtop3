@@ -18,3 +18,9 @@ clientsSwiper();
 showHideContacts();
 
 setTimeout(() => advantagesTabsFirstLoad(), 0);
+
+const langWrapper = document.querySelector('.language');
+const langToggleBtn = document.querySelector('.language__toggle');
+langToggleBtn.addEventListener('click', () => {
+  langWrapper.classList.toggle('active');
+});
