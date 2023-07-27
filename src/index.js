@@ -8,6 +8,7 @@ import mentionSwiper from './script/mention-swiper/mention-swiper';
 import advantagesTabsFirstLoad from './script/advantages-tabs/advantages-tabs';
 import clientsSwiper from './script/clients-swiper/clients-swiper';
 import showHideContacts from './script/show-hide-contacts/show-hide-contacts';
+import toggleLanguage from './script/toggle-language/toggle-language';
 
 promoSwiper();
 formCalculatorValidate();
@@ -16,11 +17,6 @@ ourCasesSwiper();
 mentionSwiper();
 clientsSwiper();
 showHideContacts();
+toggleLanguage();
 
 setTimeout(() => advantagesTabsFirstLoad(), 0);
-
-const langWrapper = document.querySelector('.language');
-const langToggleBtn = document.querySelector('.language__toggle');
-langToggleBtn.addEventListener('click', () => {
-  langWrapper.classList.toggle('active');
-});
