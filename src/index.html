@@ -424,7 +424,8 @@
                 </div>
               </div>
             </div>
-            <button class="promo__order-btn button button_oval-colored">Заказать продвижение</button>
+            <button class="promo__order-btn button button_oval-colored" data-bs-toggle="modal"
+              data-bs-target="#modal-window">Заказать продвижение</button>
           </div>
 
           <div class="col-4 align-self-end promo__col promo__col_2">
@@ -493,7 +494,8 @@
                 </div>
               </div>
               <div class="price-card__price price-card__price_free">Бесплатно</div>
-              <button class="price-card__btn button button_oval-colored">Выбрать пакет</button>
+              <button class="price-card__btn button button_oval-colored" data-bs-toggle="modal"
+                data-bs-target="#modal-window">Выбрать пакет</button>
             </div>
             <div class="price-card">
               <h4 class="price-card__title">Продвижение интернет-магазина</h4>
@@ -512,7 +514,8 @@
                 </div>
               </div>
               <div class="price-card__price">от 650 руб/мес</div>
-              <button class="price-card__btn button button_oval-colored">Выбрать пакет</button>
+              <button class="price-card__btn button button_oval-colored" data-bs-toggle="modal"
+                data-bs-target="#modal-window">Выбрать пакет</button>
             </div>
             <div class="price-card">
               <h4 class="price-card__title">Продвижение сайта услуг (корпоративный сайт)</h4>
@@ -531,7 +534,8 @@
                 </div>
               </div>
               <div class="price-card__price">от 460 руб/мес</div>
-              <button class="price-card__btn button button_oval-colored">Выбрать пакет</button>
+              <button class="price-card__btn button button_oval-colored" data-bs-toggle="modal"
+                data-bs-target="#modal-window">Выбрать пакет</button>
             </div>
             <div class="price-card">
               <h4 class="price-card__title">SEO-Аудит</h4>
@@ -550,7 +554,8 @@
                 </div>
               </div>
               <div class="price-card__price">от 300 руб/мес</div>
-              <button class="price-card__btn button button_oval-colored">Выбрать пакет</button>
+              <button class="price-card__btn button button_oval-colored" data-bs-toggle="modal"
+                data-bs-target="#modal-window">Выбрать пакет</button>
             </div>
             <div class="price-card">
               <h4 class="price-card__title">Разовые работы</h4>
@@ -569,7 +574,8 @@
                 </div>
               </div>
               <div class="price-card__price">от 120 руб/мес</div>
-              <button class="price-card__btn button button_oval-colored">Выбрать пакет</button>
+              <button class="price-card__btn button button_oval-colored" data-bs-toggle="modal"
+                data-bs-target="#modal-window">Выбрать пакет</button>
             </div>
 
           </div>
@@ -930,7 +936,8 @@
                   </div>
                 </div>
                 <div class="our-cases-slide__modal-btn d-flex justify-content-center">
-                  <button class="button button_oval-colored">Хочу так же</button>
+                  <button class="button button_oval-colored" data-bs-toggle="modal" data-bs-target="#modal-window">Хочу
+                    также</button>
                 </div>
               </div>
 
@@ -1127,7 +1134,8 @@
                   </div>
                 </div>
                 <div class="our-cases-slide__modal-btn d-flex justify-content-center">
-                  <button class="button button_oval-colored">Хочу так же</button>
+                  <button class="button button_oval-colored" data-bs-toggle="modal" data-bs-target="#modal-window">Хочу
+                    так же</button>
                 </div>
               </div>
             </div>
@@ -1239,7 +1247,7 @@
           в успешном результате и хотите, чтобы ваша компания имела своё собственное запоминающееся лицо.
         </div>
         <div class="mention__btn">
-          <button class="button button_oval-colored">Разработать сайт</button>
+          <button class="button button_oval-colored">заказать сео</button>
         </div>
       </div>
     </section>
@@ -1681,6 +1689,23 @@
     </div>
     <div class="footer__copyright"><span>© 2023 VTOP3</span></div>
   </footer>
+
+  <!-- Modal -->
+  <div class="modal fade" id="modal-window" tabindex="-1" aria-labelledby="modal-window-label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal-window-label">Модальное окно</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+            <i class="fa fa-times"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate, a.
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>

@@ -1,0 +1,40 @@
+.modal {
+  .modal-content {
+    background: $color-3-bg-sections;
+    color: $color-text-light;
+    font-size: 1.6rem;
+
+    .modal-header {
+      .modal-title {
+        width: 100%;
+        text-align: center;
+        font-size: 2rem;
+      }
+
+      .btn-close {
+        @extend %transition;
+        background-image: none;
+        font-size: 2.6rem;
+        line-height: 1rem;
+        color: $color-text-light;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        border: 1px solid transparent;
+
+        &:hover {
+          color: $color-contacts-ico;
+          border: 1px solid $color-contacts-ico;
+        }
+
+        &:focus {
+          border: none;
+        }
+      }
+    }
+
+    .modal-body {
+      padding: 15px;
+    }
+  }
+}
