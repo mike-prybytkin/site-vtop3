@@ -3,6 +3,9 @@
   flex-direction: row;
   max-width: 1794px;
   height: 431px;
+  @include media-desktop-1900 {
+    min-height: 431px;
+  }
 
   .advantages-tabs__content {
     display: none;
@@ -46,6 +49,11 @@
     background: transparent;
     padding: 30px;
     margin: 0;
+    @include media-desktop-1900 {
+      width: 360px;
+      height: 107px;
+      font-size: 2.4rem;
+    }
 
     &:hover {
       color: $color-text-section-title-colored;

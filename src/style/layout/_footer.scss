@@ -8,6 +8,9 @@
     @include flex($justify: space-around, $align: start);
     padding: 100px 0 40px 0;
     height: 100%;
+    @include media-desktop-1900 {
+      padding: 80px 1% 40px 1%;
+    }
 
     .footer__col {
       max-width: 300px;

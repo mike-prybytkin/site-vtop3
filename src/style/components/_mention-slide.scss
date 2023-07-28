@@ -1,11 +1,6 @@
-.swiper-wrapper .swiper-slide {
-  width: 426px;
-}
-
 .mention-slide {
   @include flex($justify: space-between, $align: start, $flow: column nowrap);
   height: 550px;
-  width: 426px;
   color: $color-light;
   font-size: 1.4rem;
 }
@@ -44,12 +39,17 @@
   height: 160px;
   background-image: url('../assets/png/bg-comment.png');
   background-repeat: no-repeat;
+  background-size: contain;
   padding: 50px 30px;
+  @include media-desktop-1900 {
+    background-size: cover;
+    border-radius: 14px;
+  }
 }
 
 .mention-slide__video {
-  width: 426px;
-  height: 260px;
+  width: 100%;
+  min-height: 260px;
   background: $color-bg-avatar;
 
   iframe {

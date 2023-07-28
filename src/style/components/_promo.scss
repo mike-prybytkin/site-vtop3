@@ -16,16 +16,28 @@
   line-height: 13rem;
   @include font-primary($size: 10rem, $weight: 700);
   text-transform: uppercase;
+  @include media-desktop-1900 {
+    font-size: 8rem;
+    line-height: 11rem;
+  }
 }
 
 .promo__cards {
   max-width: 1120px;
+  @include media-desktop-1900 {
+    max-width: 850px;
+  }
+
   .promo__card {
     .card {
       background: $color-bg-promo-card;
       .card-text {
         @include font-additionary($size: 2rem);
         line-height: 2.5rem;
+        @include media-desktop-1900 {
+          font-size: 1.4rem;
+          line-height: 2rem;
+        }
       }
   
       .fa-check-circle {

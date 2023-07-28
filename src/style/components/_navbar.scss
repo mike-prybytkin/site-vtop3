@@ -6,6 +6,7 @@
 .navbar {
   .nav-item {
     font-size: 1.6rem;
+    white-space: nowrap;
 
     &:hover .nav-link {
       @extend %text-hover;
@@ -36,6 +37,9 @@ nav.navbar .dropdown:hover > .dropdown-menu {
 } 
 
 .navbar-nav {
+  width: 94%;
+  justify-content: space-between;
+
   .nav-item {
     &_all-services,
     &_about {
@@ -47,6 +51,9 @@ nav.navbar .dropdown:hover > .dropdown-menu {
 
 .navbar-nav {
   gap: 3.5vw;
+  @include media-desktop-1900 {
+    gap: 2vw;
+  }
 }
 
 ul.dropdown-menu {

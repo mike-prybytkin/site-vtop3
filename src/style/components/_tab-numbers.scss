@@ -1,5 +1,8 @@
 .numbers-tab {
   font-size: 1.6rem;
+  @include media-desktop-1900 {
+    padding-top: 170px;
+    }
 
   .numbers-tab__announce {
     width: 135px;

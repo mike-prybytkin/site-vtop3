@@ -6,6 +6,10 @@
   background-position: center 50px;
   height: 705px;
   width: 650px;
+
+  @include media-desktop-1900 {
+    width: 600px;
+  }
 }
 
 .promo-swiper__content {

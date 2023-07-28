@@ -1,8 +1,17 @@
 .contacts {
+  .contacts-wrapper {
+    @include media-desktop-1900 {
+      max-width: 530px;
+    }
+  }
   .fa {
     color: $color-contacts-ico;
     font-size: 2rem;
     line-height: 3rem;
+    @include media-desktop-1900 {
+      font-size: 1.6rem;
+      line-height: 2rem;
+    }
   }
 
   a {
@@ -12,6 +21,10 @@
 
   .contacts__tel {
     font-size: 2rem;
+    @include media-desktop-1900 {
+      font-size: 1.6rem;
+    }
+
     i {
       padding-right: 6px;
     }
@@ -19,6 +32,11 @@
 
   .contacts__email {
     font-size: 2rem;
+    @include media-desktop-1900 {
+      width: 222px;
+      font-size: 1.6rem;
+    }
+
     i {
       padding-right: 10px;
     }

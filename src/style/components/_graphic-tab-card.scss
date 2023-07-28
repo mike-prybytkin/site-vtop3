@@ -1,8 +1,20 @@
+.graphic-tab {
+  @include media-desktop-1900 {
+    padding-top: 170px;
+    }
+
+  .graphic-tab__img {
+    @include media-desktop-1900 {
+    width: 100%;
+    }
+  }
+}
+
 .graphic-tab-card {
   width: 250px;
   height: 115px;
   padding: 12px;
-  border: solid 1px $color-bg-buttons-our-cases;
+  border: solid 2px $color-bg-buttons-our-cases;
   font-size: 1.4rem;
 
   .graphic-tab-card__ico {

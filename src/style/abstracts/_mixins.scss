@@ -25,3 +25,7 @@
   align-items: $align;
   flex-flow: $flow;
 }
+
+@mixin media-desktop-1900 {
+  @media (max-width: $desktop-width-1900) { @content; }
+}

@@ -6,10 +6,21 @@
     padding: 100px 0 0 0;
     height: 100%;
 
+    @include media-desktop-1900 {
+      padding: 80px 1% 0 1%;
+    }
+
     .calculator__title {
       width: 1000px;
+      @include media-desktop-1900 {
+        max-width: 800px;
+      }
+      
       .calculator__title-comment {
-        width: 950px
+        width: 950px;
+        @include media-desktop-1900 {
+          max-width: 800px;
+        }
       }
     }
   }

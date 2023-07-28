@@ -1,10 +1,14 @@
 .team {
   background: $color-4-bg-sections;
-  height: 970px;
+  min-height: 970px;
+  padding-bottom: 40px;
 
   .team-wrapper {
     padding: 100px 0 0 0;
     height: 100%;
+    @include media-desktop-1900 {
+      padding: 80px 1% 0 1%;
+    }
 
     .team__title {
       text-align: center;
@@ -15,6 +19,10 @@
     .team__card-container {
       margin-top: 48px;
       @include flex($justify: space-between);
+      @include media-desktop-1900 {
+        gap: 20px;
+        justify-content: space-around;
+      }
     }
   }
 }

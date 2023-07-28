@@ -1,4 +1,4 @@
-.logo {
+.logo.col-3 {
   position: relative;
   height: 83px;
   width: 359px;
@@ -10,7 +10,7 @@
   .logo__link {
     position: absolute;
     top: 40%;
-    left: 42%;
+    left:50%;
     transform: translate(-50%, -50%);
   }
 }

@@ -12,11 +12,20 @@
   &_colored {
     color: $color-text-section-title-colored;
   }
+
+  @include media-desktop-1900 {
+    font-size: 6rem;
+  }
 }
 
 .section-title-comment {
   @include font-primary($size: 5.4rem);
   line-height: 7rem;
+
+  @include media-desktop-1900 {
+    font-size: 5rem;
+    line-height: 6rem;
+  }
 
   &_bold {
     text-transform: uppercase;

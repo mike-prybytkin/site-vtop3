@@ -5,6 +5,11 @@
   background-position: 360px 25px;
   height: 600px;
   margin: auto;
+  @include media-desktop-1900 {
+    height: 500px;
+    background-position: 130px 0px;
+    background-size: contain;
+  }
 
   .team-card__content {
     position: relative;
@@ -13,6 +18,9 @@
     .team-card__img {
       width: auto;
       height: 600px;
+      @include media-desktop-1900 {
+        height: 500px;
+      }
     }
   
     .team-card__info {

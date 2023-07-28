@@ -5,16 +5,25 @@
   .order-wrapper {
     padding: 0;
     height: 100%;
-    @include flex($align: stretch);
+    @include flex($align: stretch, $flow: row nowrap);
     gap: 70px;
+    @include media-desktop-1900 {
+      padding: 0 1%;
+    }
   }
 }
 
 .order__title-wrapper {
   margin-top: 140px;
+  @include media-desktop-1900 {
+    margin-top: 100px;
+  }
 
   .section-title {
     font-size: 10rem;
+    @include media-desktop-1900 {
+      font-size: 7rem;
+    }
   }
   .section-title-comment {
     margin: 0;
@@ -33,6 +42,9 @@
   flex-basis: 680px;
   padding: 130px 0 0 45px;
   box-shadow: $shadow-order-form;
+  @include media-desktop-1900 {
+    padding-top: 100px;
+  }
 
   .order__form-title {
     font-size: 3.6rem;

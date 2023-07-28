@@ -1,0 +1,7 @@
+.container-xxl {
+  padding: 0;
+
+  @include media-desktop-1900 {
+    padding: 0 1%;
+  }
+}

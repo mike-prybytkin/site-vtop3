@@ -3,21 +3,11 @@
   width: 1840px;
   margin-left: 25px;
   left: -25px;
+  @include media-desktop-1900 {
+    width: 1400px;
+  }
 
   .swiper-our-cases__wrapper {
     gap: 25px;
-  }
-
-  .swiper-our-cases__button {
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    box-shadow: $shadow-slider-button;
-    background: $color-light;
-
-    &::after {
-      font-size: 20px;
-      color: $color-text-dark;
-    }
   }
 }

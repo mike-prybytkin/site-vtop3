@@ -38,3 +38,23 @@
     background: $color-light;
   }
 }
+
+.swiper-button {
+  width: 48px !important;
+  height: 48px !important;
+  border-radius: 50%;
+  box-shadow: $shadow-slider-button;
+  font-weight: bold;
+
+  &::after {
+    font-size: 20px !important;
+    color: $color-text-dark;
+  }
+
+  &_light {
+    background: $color-light;
+  }
+  &_colored {
+    background: $color-text-section-title-colored;
+  }
+}

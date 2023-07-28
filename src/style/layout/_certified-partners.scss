@@ -4,6 +4,11 @@
   @include flex($flow: column wrap);
   gap: 40px;
 
+  @include media-desktop-1900 {
+    padding: 0 1%;
+    height: 500px;
+  }
+
   .certified-partners__title {
     max-width: 1450px;
     text-align: center;
