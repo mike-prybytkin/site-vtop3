@@ -1,12 +1,12 @@
 .our-advantages {
   background: $color-2-bg-sections;
-  height: 780px;
+  min-height: 780px;
 
   .our-advantages-wrapper {
-    padding: 100px 0 0 0;
+    padding: 100px 0 50px 0;
     height: 100%;
     @include media-desktop-1900 {
-      padding: 80px 1% 0 1%;
+      padding: 80px 1% 50px 1%;
     }
 
     .our-advantages__tabs {

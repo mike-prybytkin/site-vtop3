@@ -22,6 +22,12 @@
 
   .nav-link {
     color: $color-text-light;
+    @include media-desktop-1440 {
+      max-width: 200px;
+      white-space: initial;
+      text-align: center;
+    }
+
     &:focus {
       outline: none;
       color: $color-text-light;
@@ -39,6 +45,9 @@ nav.navbar .dropdown:hover > .dropdown-menu {
 .navbar-nav {
   width: 94%;
   justify-content: space-between;
+  @include media-desktop-1440 {
+    width: 100%;
+  }
 
   .nav-item {
     &_all-services,
@@ -53,6 +62,9 @@ nav.navbar .dropdown:hover > .dropdown-menu {
   gap: 3.5vw;
   @include media-desktop-1900 {
     gap: 2vw;
+  }
+  @include media-desktop-1440 {
+    gap: 0px;
   }
 }
 

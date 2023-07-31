@@ -3,8 +3,12 @@
   flex-direction: row;
   max-width: 1794px;
   height: 431px;
+  position: relative;
   @include media-desktop-1900 {
     min-height: 431px;
+  }
+  @include media-desktop-1440 {
+    height: 534px;
   }
 
   .advantages-tabs__content {
@@ -34,6 +38,10 @@
   }
   &_right {
     order: 2;
+    @include media-desktop-1440 {
+      position: absolute;
+      top: 321px
+    }
   }
   
   .advantages-tabs__link {
@@ -53,6 +61,10 @@
       width: 360px;
       height: 107px;
       font-size: 2.4rem;
+    }
+    @include media-desktop-1440 {
+      padding: 26px 0 26px 26px;
+      line-height: 2.5rem;
     }
 
     &:hover {

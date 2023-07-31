@@ -3,6 +3,9 @@
     font-weight: 700;
     color: $color-text-section-title-colored;
     font-size: 3rem;
+    @include media-desktop-1440 {
+      font-size: 2rem;
+    }
   }
 }
 
@@ -12,6 +15,12 @@
   gap: 15px;
   font-size: 2rem;
   width: inherit;
+  @include media-desktop-1440 {
+    font-size: 1.6rem;
+    gap: 5px;
+    flex-wrap: nowrap;
+    margin: 10px 0;
+  }
 
   &::before {
     content: "";
@@ -42,12 +51,18 @@
 
   .funnel-tab-info__comment {
     margin: 0;
+    @include media-desktop-1440 {
+      white-space: nowrap;
+    }
   }
 }
 
 .funnel-tab-income {
   padding-top: 40px;
   font-size: 1.4rem;
+  @include media-desktop-1440 {
+    padding-top: 100px;
+  }
 
   .funnel-tab-income__card {
     border: solid 1px $color-bg-buttons-our-cases;

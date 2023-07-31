@@ -9,6 +9,12 @@
 
   @include media-desktop-1900 {
     width: 600px;
+    background-size: contain;
+  }
+  @include media-desktop-1440 {
+    width: 400px;
+    height: 600px;
+    left: -50px;
   }
 }
 
@@ -19,6 +25,10 @@
   .promo-swiper__img {
     width: 470px;
     height: 705px;
+    @include media-desktop-1440 {
+      width: auto;
+      height: 600px;
+    }
   }
 
   .promo-swiper__info {

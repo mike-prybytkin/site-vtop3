@@ -3,12 +3,9 @@
   background: $color-light;
   border: 3px solid $color-text-section-title-colored;
   padding: 40px 30px;
-  width: 1790px !important;
+  width: 96% !important;
   height: 705px;
   margin-left: 25px;
-  @include media-desktop-1900 {
-    width: 1350px !important;
-  }
 
   .our-cases-slide__modal-btn {
     margin-top: 20px;
@@ -19,6 +16,9 @@
       height: 400px;
       width: auto;
       margin-top: 180px;
+    }
+    @include media-desktop-1440 {
+      height: 300px;
     }
 
   }
@@ -62,6 +62,17 @@
       top: 200px;
       width: 300px;
       height: 200px;
+      @include media-desktop-1440 {
+        width: 250px;
+        height: 180px;
+      }
+    }
+  }
+  @include media-desktop-1440 {
+    & > div {
+      &:first-of-type {
+        margin-left: 230px;
+      }
     }
   }
 }

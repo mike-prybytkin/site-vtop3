@@ -20,10 +20,14 @@
       .swiper-wrapper {
         align-items: center;
         row-gap: 30px;
+        text-align: center;
       }
       
       .clients__swiper-btn {
         display: none;
+        @include media-desktop-1440 {
+          display: block;
+        }
       }
     }
   }

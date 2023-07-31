@@ -29,3 +29,7 @@
 @mixin media-desktop-1900 {
   @media (max-width: $desktop-width-1900) { @content; }
 }
+
+@mixin media-desktop-1440 {
+  @media (max-width: $desktop-width-1440) { @content; }
+}

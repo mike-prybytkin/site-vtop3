@@ -36,6 +36,9 @@
       width: 222px;
       font-size: 1.6rem;
     }
+    @include media-desktop-1440 {
+      width: 190px;
+    }
 
     i {
       padding-right: 10px;

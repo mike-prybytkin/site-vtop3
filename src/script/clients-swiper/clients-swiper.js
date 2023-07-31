@@ -16,12 +16,12 @@ const clientsSwiper = () =>
       },
       768: {
         centeredSlides: true,
-        slidesPerView: 1,
+        slidesPerView: 2,
       },
       1200: {
         grid: { rows: 1 },
-        slidesPerView: 5,
-        spaceBetween: 10,
+        slidesPerView: 4,
+        spaceBetween: 0,
         allowTouchMove: true,
       },
       1440: {

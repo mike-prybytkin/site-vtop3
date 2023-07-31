@@ -20,12 +20,21 @@
     font-size: 8rem;
     line-height: 11rem;
   }
+  @include media-desktop-1440 {
+    font-size: 5rem;
+    line-height: 6rem;
+    width: 530px;
+    margin-top: 300px;
+  }
 }
 
 .promo__cards {
   max-width: 1120px;
   @include media-desktop-1900 {
     max-width: 850px;
+  }
+  @include media-desktop-1440 {
+    max-width: 700px;
   }
 
   .promo__card {
@@ -37,6 +46,10 @@
         @include media-desktop-1900 {
           font-size: 1.4rem;
           line-height: 2rem;
+        }
+        @include media-desktop-1440 {
+          font-size: 1.2rem;
+          line-height: 1.8rem;
         }
       }
   

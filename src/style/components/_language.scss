@@ -4,7 +4,7 @@
   .language__toggle {
     position: relative;
     z-index: 2;
-    @include flex($justify: start);
+    @include flex($justify: start, $flow: row nowrap);
     gap: 5px;
     font-size: 1.6rem;
     color: $color-text-lang;

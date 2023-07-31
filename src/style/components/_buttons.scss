@@ -45,6 +45,8 @@
   border-radius: 50%;
   box-shadow: $shadow-slider-button;
   font-weight: bold;
+  text-align: center;
+  line-height: 5.5rem;
 
   &::after {
     font-size: 20px !important;
