@@ -7,6 +7,9 @@
   .form-calculator__input-group {
     width: 580px;
     height: 84px;
+    @include media-desktop-1200 {
+      width: 400px;
+    }
 
     .form-calculator__input {
       border: none;
@@ -23,22 +26,6 @@
       &:last-of-type {
         border-radius: 30px !important;
       }
-    }
-  }
-
-  .form-calculator__select {
-    width: 580px;
-    height: 84px;
-    font-size: 2.4rem;
-    border-radius: 30px;
-    border: none;
-    outline: none;
-    padding: 5px 25px;
-
-    option {
-      border-radius: 30px !important;
-      width: 580px !important;
-      font-size: 2.4rem !important;
     }
   }
 

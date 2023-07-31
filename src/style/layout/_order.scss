@@ -10,6 +10,9 @@
     @include media-desktop-1900 {
       padding: 0 1%;
     }
+    @include media-desktop-1200 {
+      gap: 5px;
+    }
   }
 }
 

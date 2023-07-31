@@ -16,6 +16,10 @@
   padding: 12px;
   border: solid 2px $color-bg-buttons-our-cases;
   font-size: 1.4rem;
+  @include media-desktop-1200 {
+    width: 170px;
+    height: 100px;
+  }
 
   .graphic-tab-card__ico {
     width: 50px;
@@ -25,11 +29,20 @@
     line-height: 50px;
     font-size: 2rem;
     color: $color-light;
+    @include media-desktop-1200 {
+      font-size:1.6rem;
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+    }
   }
 
   .graphic-tab-card__title {
     font-weight: 700;
     font-size: 2.4rem;
+    @include media-desktop-1200 {
+      font-size: 2rem;
+    }
   }
 
   .graphic-tab-card__number {

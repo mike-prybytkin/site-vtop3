@@ -28,6 +28,10 @@
   text-align: center;
   padding-top: 16px;
   color: $color-text-dark;
+  @include media-desktop-1200 {
+    width: 220px;
+    height: 66px;
+  }
 
   &:hover {
     color: $color-text-section-title-colored;

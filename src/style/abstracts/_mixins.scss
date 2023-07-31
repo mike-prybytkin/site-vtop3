@@ -33,3 +33,7 @@
 @mixin media-desktop-1440 {
   @media (max-width: $desktop-width-1440) { @content; }
 }
+
+@mixin media-desktop-1200 {
+  @media (max-width: $desktop-width-1200) { @content; }
+}

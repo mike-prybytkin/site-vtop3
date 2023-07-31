@@ -23,5 +23,8 @@
   .header__promo {
     height: 870px;
     background: $color-1-bg-sections;
+    @include media-desktop-1200 {
+      height: 666px;
+    }
   }
 }

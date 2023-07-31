@@ -16,6 +16,9 @@
   @include media-desktop-1900 {
     font-size: 6rem;
   }
+  @include media-desktop-1200 {
+    font-size: 5rem;
+  }
 }
 
 .section-title-comment {
@@ -26,11 +29,18 @@
     font-size: 5rem;
     line-height: 6rem;
   }
+  @include media-desktop-1200 {
+    font-size: 4rem;
+    line-height: 5rem;
+  }
 
   &_bold {
     text-transform: uppercase;
     font-weight: 700;
     line-height: 6rem;
     margin-top: 38px;
+    @include media-desktop-1200 {
+      line-height: 5rem;
+    }
   }
 }

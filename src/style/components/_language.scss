@@ -29,6 +29,9 @@
     border-radius: 0 0 10px 10px;
     box-shadow: $shadow-toggle-lang;
     transform: translateY(-50px);
+    @include media-desktop-1200 {
+      padding: 5px;
+    }
 
     li {
       margin: 6px 0;

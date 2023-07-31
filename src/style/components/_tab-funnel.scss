@@ -21,6 +21,9 @@
     flex-wrap: nowrap;
     margin: 10px 0;
   }
+  @include media-desktop-1200 {
+    gap: 2px;
+  }
 
   &::before {
     content: "";
@@ -47,6 +50,9 @@
     font-size: 3rem;
     min-width: 30px;
     text-align: center;
+    @include media-desktop-1200 {
+      font-size: 2rem;
+    }
   }
 
   .funnel-tab-info__comment {

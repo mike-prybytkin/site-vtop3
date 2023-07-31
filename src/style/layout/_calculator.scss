@@ -15,11 +15,17 @@
       @include media-desktop-1900 {
         max-width: 800px;
       }
+      @include media-desktop-1200 {
+        max-width: 600px;
+      }
       
       .calculator__title-comment {
         width: 950px;
         @include media-desktop-1900 {
           max-width: 800px;
+        }
+        @include media-desktop-1200 {
+          max-width: 600px;
         }
       }
     }

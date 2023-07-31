@@ -1,7 +1,16 @@
 .contacts {
+  @include media-desktop-1200 {
+    padding: 0;
+  }
   .contacts-wrapper {
     @include media-desktop-1900 {
       max-width: 530px;
+    }
+    @include media-desktop-1200 {
+      position: absolute;
+      right: 10px;
+      top: 20px;
+      width: 490px;
     }
   }
   .fa {
@@ -17,6 +26,9 @@
   a {
     @include font-numbers($size: 2rem);
     text-decoration: none;
+    @include media-desktop-1200 {
+      font-size: 1.6rem;
+    }
   }
 
   .contacts__tel {

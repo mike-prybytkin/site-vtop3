@@ -6,6 +6,10 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: left;
+  @include media-desktop-1200 {
+    height: 64px;
+    width: 278px;
+  }
 
   .logo__link {
     position: absolute;

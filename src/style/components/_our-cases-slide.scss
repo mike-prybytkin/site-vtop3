@@ -3,9 +3,15 @@
   background: $color-light;
   border: 3px solid $color-text-section-title-colored;
   padding: 40px 30px;
-  width: 96% !important;
+  width: 97% !important;
   height: 705px;
   margin-left: 25px;
+  @include media-desktop-1900 {
+    width: 96% !important;
+  }
+  @include media-desktop-1200 {
+    width: 95% !important;
+  }
 
   .our-cases-slide__modal-btn {
     margin-top: 20px;
@@ -20,7 +26,9 @@
     @include media-desktop-1440 {
       height: 300px;
     }
-
+    @include media-desktop-1200 {
+      height: 240px;
+    }
   }
 }
 
@@ -31,6 +39,12 @@
     position: absolute;
     width: 1000px;
     left: calc(50% - (1000px / 2));
+  }
+  @include media-desktop-1200 {
+    width: 800px;
+    left: calc(50% - (800px / 2));
+    text-align: center;
+    font-size: 3rem;
   }
 }
 
@@ -45,34 +59,45 @@
     left: calc(50% - (1000px / 2));
     top: 120px;
   }
+  @include media-desktop-1200 {
+    width: 700px;
+    left: calc(50% - (700px / 2));
+  }
 }
 
 .our-cases-slide__info {
   padding-top: 20px;
-
-  @include media-desktop-1900 {
-    & > div {
-      &:first-of-type {
-        margin-left: 310px;
-      }
-    }
+  @include media-desktop-1200 {
+    padding-top: 0px;
+  }
   
-    .our-cases-slide__info-img {
+  .our-cases-slide__info-img {
+    @include media-desktop-1900 {
       position: relative;
       top: 200px;
       width: 300px;
       height: 200px;
-      @include media-desktop-1440 {
-        width: 250px;
-        height: 180px;
-      }
+    }
+    @include media-desktop-1440 {
+      width: 250px;
+      height: 180px;
+    }
+    @include media-desktop-1200 {
+      width: 230px;
+      height: 160px;
+      left: -30px;
     }
   }
-  @include media-desktop-1440 {
-    & > div {
-      &:first-of-type {
-        margin-left: 230px;
-      }
+
+  .our-cases-slide__info-text {
+    @include media-desktop-1900 {
+      margin-left: 310px;
+    }
+    @include media-desktop-1440 {
+      margin-left: 230px;
+    }
+    @include media-desktop-1200 {
+      margin: 30px 0 0 140px;
     }
   }
 }

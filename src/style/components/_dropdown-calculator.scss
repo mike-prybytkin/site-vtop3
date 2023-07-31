@@ -1,6 +1,9 @@
 .dropdown-calculator {
   width: 580px;
   height: 84px;
+  @include media-desktop-1200 {
+    width: 400px;
+  }
 
   .dropdown-calculator__btn {
     display: inline-block;
@@ -29,6 +32,9 @@
     font-size: 2.4rem;
     border-radius: 30px;
     padding: 20px 25px;
+    @include media-desktop-1200 {
+      width: 400px;
+    }
 
     li {
       @extend %transition;

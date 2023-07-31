@@ -31,6 +31,9 @@
       height: 24px;
       background: transparent;
       border: solid 1px $color-text-section-title-colored;
+      @include media-desktop-1200 {
+        width: 64px;
+      }
 
       &:checked {
         background-image: url('../assets/png/checked.png');
