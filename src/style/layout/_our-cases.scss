@@ -1,12 +1,18 @@
 .our-cases {
   background: $color-2-bg-sections;
   height: 1215px;
+  @include media-desktop-900 {
+    height: 769px;
+  }
 
   .our-cases-wrapper {
     padding: 100px 0 0 0;
     height: 100%;
     @include media-desktop-1900 {
       padding: 80px 1% 0 1%;
+    }
+    @include media-desktop-900 {
+      padding: 50px 1% 10px 1%;
     }
 
     .our-cases__slider {
@@ -16,6 +22,9 @@
 
     .our-cases__all-cases-btn {
       margin-top: 54px;
+      @include media-desktop-900 {
+        margin-top: 25px;
+      }
     }
   }
 }

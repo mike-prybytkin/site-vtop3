@@ -1,12 +1,18 @@
 .questions {
   min-height: 1005px;
   background: $color-1-bg-sections;
+  @include media-desktop-900 {
+    min-height: 699px;
+  }
 
   .questions-wrapper {
     padding: 100px 0 0 0;
     height: 100%;
     @include media-desktop-1900 {
       padding: 80px 1% 0 1%;
+    }
+    @include media-desktop-900 {
+      padding: 50px 1% 10px 1%;
     }
 
     .questions__title {
@@ -17,6 +23,9 @@
     .questions__accordion {
       margin-top: 30px;
       padding-bottom: 30px;
+      @include media-desktop-900 {
+        margin-top: 0px;
+      }
     }
   }
 }

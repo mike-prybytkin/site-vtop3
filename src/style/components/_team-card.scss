@@ -20,10 +20,17 @@
     height: 450px;
     margin-left: 20px;
   }
+  @include media-desktop-900 {
+    width: 255px;
+    height: 340px;
+    margin-left: 110px;
+  }
 
   .team-card__content {
     position: relative;
     text-align: center;
+    @include flex ($align: end, $justify: start);
+    height: 100%;
   
     .team-card__img {
       width: auto;
@@ -34,12 +41,20 @@
       @include media-desktop-1200 {
         height: 450px;
       }
+      @include media-desktop-900 {
+        height: 300px;
+      }
     }
   
     .team-card__info {
       position: absolute;
       bottom: 90px;
       font-size: 2rem;
+      @include media-desktop-900 {
+        font-size: 1.2rem;
+        bottom: 16px;
+        left: -45px;
+      }
   
       .team-card__name {
         color: $color-text-additionary;

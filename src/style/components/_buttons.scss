@@ -12,6 +12,9 @@
   font-size: 1.8rem;
   height: 64px;
   border-radius: 32px;
+  @include media-desktop-900 {
+    font-size: 1.4rem;
+  }
 
   &:hover {
     box-shadow: $shadow-button;
@@ -31,6 +34,11 @@
   @include media-desktop-1200 {
     width: 220px;
     height: 66px;
+  }
+  @include media-desktop-900 {
+    height: 48px;
+    font-size: 1.4rem;
+    padding-top: 13px;
   }
 
   &:hover {

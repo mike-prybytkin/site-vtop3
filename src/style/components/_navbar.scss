@@ -11,6 +11,10 @@
     &:hover .nav-link {
       @extend %text-hover;
     }
+
+    @include media-desktop-900 {
+      font-size: 1.4rem;
+    }
   }
 
   .nav-item.dropend,

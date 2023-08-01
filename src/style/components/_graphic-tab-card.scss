@@ -1,7 +1,10 @@
 .graphic-tab {
   @include media-desktop-1900 {
     padding-top: 170px;
-    }
+  }
+  @include media-desktop-900 {
+    padding-top: 115px;
+  }
 
   .graphic-tab__img {
     @include media-desktop-1900 {
@@ -20,6 +23,11 @@
     width: 170px;
     height: 100px;
   }
+  @include media-desktop-900 {
+    width: 140px;
+    height: 65px;
+    font-size: 0.8rem;
+  }
 
   .graphic-tab-card__ico {
     width: 50px;
@@ -35,6 +43,12 @@
       height: 30px;
       line-height: 30px;
     }
+    @include media-desktop-900 {
+      font-size:1.4rem;
+      width: 26px;
+      height: 26px;
+      line-height: 26px;
+    }
   }
 
   .graphic-tab-card__title {
@@ -43,11 +57,17 @@
     @include media-desktop-1200 {
       font-size: 2rem;
     }
+    @include media-desktop-900 {
+      font-size: 1.4rem;
+    }
   }
 
   .graphic-tab-card__number {
     font-weight: 700;
     font-size: 2rem;
+    @include media-desktop-900 {
+      font-size: 1.2rem;
+    }
   }
 }
 

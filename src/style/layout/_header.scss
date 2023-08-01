@@ -7,6 +7,9 @@
     border-radius: 0 0 45px 45px;
     background: $color-bg-header;
     z-index: 3;
+    @include media-tablet-768 {
+      height: 80px;
+    }
 
     .header__separator {
       position: absolute;
@@ -17,6 +20,9 @@
       top: 70px;
       left: 50%;
       transform: translateX(-50%);
+      @include media-desktop-900 {
+        display: none;
+      }
     }
   }
 
@@ -25,6 +31,9 @@
     background: $color-1-bg-sections;
     @include media-desktop-1200 {
       height: 666px;
+    }
+    @include media-desktop-900 {
+      height: 467px;
     }
   }
 }

@@ -18,6 +18,9 @@
     background: $color-light;
     color: $color-text-dark;
     padding: 40px;
+    @include media-desktop-900 {
+      padding: 30px;
+    }
 
     &:target {
       display: block;
@@ -101,6 +104,9 @@
 .advantages-tabs__content-title {
   font-size: 3.2rem;
   font-weight: 700;
+  @include media-desktop-900 {
+    font-size: 2.4rem;
+  }
 }
 
 .advantages-tabs__content-text {
@@ -109,6 +115,13 @@
   margin: 15px;
   @include media-desktop-1200 {
     font-size: 2rem;
-  line-height: 2.5rem;
+    line-height: 2.5rem;
+  }
+  @include media-desktop-900 {
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+  }
+  @include media-desktop-900 {
+    margin: 20px 0 0 5px;
   }
 }

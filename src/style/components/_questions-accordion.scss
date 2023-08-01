@@ -18,6 +18,9 @@
           font-size: 3.2rem;
           color: $color-light;
           box-shadow: none;
+          @include media-desktop-900 {
+            font-size: 2.4rem;
+          }
 
           &:focus {
             border: none;
@@ -46,5 +49,10 @@
     padding: 20px 0 0 90px;
     color: $color-light;
     line-height: 3.5rem;
+    @include media-desktop-900 {
+      font-size: 1.6rem;
+      line-height: 1.8rem;
+      padding-left: 60px;
+    }
   }
 }

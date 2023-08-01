@@ -1,6 +1,9 @@
 .order {
   background: $color-2-bg-sections;
   height: 705px;
+  @include media-desktop-900 {
+    height: 394px;
+  }
 
   .order-wrapper {
     padding: 0;
@@ -21,11 +24,30 @@
   @include media-desktop-1900 {
     margin-top: 100px;
   }
+  @include media-desktop-900 {
+    margin-top: 60px;
+  }
+
+  p {
+    &:first-of-type {
+      @include media-desktop-900 {
+        font-size: 2.4rem;
+      }
+    }
+  }
+  h2 {
+    @include media-desktop-900 {
+      margin-bottom: 0;
+    }
+  }
 
   .section-title {
     font-size: 10rem;
     @include media-desktop-1900 {
       font-size: 7rem;
+    }
+    @include media-desktop-900 {
+      font-size: 5rem;
     }
   }
   .section-title-comment {
@@ -38,6 +60,11 @@
     font-size: 3.6rem;
     color: $color-text-light;
     line-height: 4.7rem;
+    @include media-desktop-900 {
+      margin-top: 8px;
+      font-size: 1.6rem;
+      line-height: 2.2rem;
+    }
   }
 }
 
@@ -48,14 +75,24 @@
   @include media-desktop-1900 {
     padding-top: 100px;
   }
+  @include media-desktop-900 {
+    padding: 70px 0 0 20px;
+    flex-basis: 590px;
+  }
 
   .order__form-title {
     font-size: 3.6rem;
     font-weight: 700;
     color: $color-text-light;
+    @include media-desktop-900 {
+      font-size: 2rem;
+    }
   }
 
   .order__form {
     margin: 10px 0 0 10px;
+    @include media-desktop-900 {
+      margin: 0 0 0 10px;
+    }
   }
 }

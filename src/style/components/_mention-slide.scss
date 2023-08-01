@@ -3,10 +3,13 @@
   height: 550px;
   color: $color-light;
   font-size: 1.4rem;
+  @include media-desktop-900 {
+    gap: 18px;
+  }
 }
 
 .mention-slide__client {
-  @include flex($justify: start);
+  @include flex($justify: start, $flow: row nowrap);
   gap: 15px;
   padding-left: 4px;
 
@@ -22,6 +25,9 @@
     font-size: 1.6rem;
     width: 200px;
     font-weight: 700;
+    @include media-desktop-900 {
+      width: auto;
+    }
 
     .mention-slide__name {
       color: $color-text-section-title-colored;
@@ -45,12 +51,22 @@
     background-size: cover;
     border-radius: 14px;
   }
+  @include media-desktop-900 {
+    height: 123px;
+    font-size: 1.4rem;
+    background-image: url('../assets/png/bg-comment-tablet.png');
+    background-size: contain;
+    line-height: 1.4rem;
+  }
 }
 
 .mention-slide__video {
   width: 100%;
   min-height: 260px;
   background: $color-bg-avatar;
+  @include media-desktop-900 {
+    min-height: 346px;
+  }
 
   iframe {
     width: 100%;

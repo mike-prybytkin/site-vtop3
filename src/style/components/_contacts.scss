@@ -1,3 +1,13 @@
+%ico-for-tablet {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  background: $color-bg-tablet-contacts;
+  padding: 0;
+}
+
 .contacts {
   @include media-desktop-1200 {
     padding: 0;
@@ -9,8 +19,15 @@
     @include media-desktop-1200 {
       position: absolute;
       right: 10px;
-      top: 20px;
+      top: 18px;
       width: 490px;
+    }
+    @include media-desktop-900 {
+      justify-content: end;
+      gap: 15px;
+      width: auto;
+      right: 70px;
+      align-items: center;
     }
   }
   .fa {
@@ -40,6 +57,25 @@
     i {
       padding-right: 6px;
     }
+
+    &_tablet {
+      @extend %ico-for-tablet;
+      display: none;
+      @include media-desktop-900 {
+        display: block;
+      }
+
+      i {
+        padding: 0;
+      }
+    }
+
+    &_desktop {
+      display: block;
+      @include media-desktop-900 {
+        display: none !important;
+      }
+    }
   }
 
   .contacts__email {
@@ -54,6 +90,26 @@
 
     i {
       padding-right: 10px;
+    }
+
+    &_tablet {
+      @extend %ico-for-tablet;
+      display: none;
+      @include media-desktop-900 {
+        width: 40px;
+        display: block;
+      }
+
+      i {
+        padding: 0;
+      }
+    }
+    
+    &_desktop {
+      display: block;
+      @include media-desktop-900 {
+        display: none !important;
+      }
     }
   }
 }

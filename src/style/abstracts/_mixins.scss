@@ -37,3 +37,11 @@
 @mixin media-desktop-1200 {
   @media (max-width: $desktop-width-1200) { @content; }
 }
+
+@mixin media-desktop-900 {
+  @media (max-width: $desktop-width-900) { @content; }
+}
+
+@mixin media-tablet-768 {
+  @media (max-width: $tablet-width-768) { @content; }
+}

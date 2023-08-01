@@ -21,6 +21,11 @@
     height: 498px;
     left: -20px;
   }
+  @include media-desktop-900 {
+    width: 243px;
+    height: 365px;
+    background-position: center 30px;
+  }
 }
 
 .promo-swiper__content {
@@ -37,12 +42,20 @@
     @include media-desktop-1200 {
       height: 500px;
     }
+    @include media-desktop-900 {
+      height: 365px;
+    }
   }
 
   .promo-swiper__info {
     position: absolute;
     bottom: 90px;
     font-size: 2rem;
+    @include media-desktop-900 {
+      font-size: 1.2rem;
+      bottom: 16px;
+      left: 0px;
+    }
 
     .promo-swiper__name {
       color: $color-text-additionary;

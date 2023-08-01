@@ -1,6 +1,10 @@
 .calculator {
   height: 855px;
   background: $color-1-bg-sections;
+  overflow: hidden;
+  @include media-desktop-900 {
+    height: 545px;
+  }
   
   .calculator-wrapper {
     padding: 100px 0 0 0;
@@ -8,6 +12,9 @@
 
     @include media-desktop-1900 {
       padding: 80px 1% 0 1%;
+    }
+    @include media-desktop-900 {
+      padding: 50px 1% 0 1%;
     }
 
     .calculator__title {
@@ -18,6 +25,9 @@
       @include media-desktop-1200 {
         max-width: 600px;
       }
+      @include media-desktop-900 {
+        max-width: 480px
+      }
       
       .calculator__title-comment {
         width: 950px;
@@ -27,16 +37,25 @@
         @include media-desktop-1200 {
           max-width: 600px;
         }
+        @include media-desktop-900 {
+          max-width: 530px;
+        }
       }
     }
   }
 
   .calculator__form {
     margin-top: 56px;
+    @include media-desktop-900 {
+      margin-top: 32px;
+    }
   }
 
   .calculator__progress-bar {
     margin-top: 53px;
+    @include media-desktop-900 {
+      margin-top: 35px;
+    }
   }
 }
 

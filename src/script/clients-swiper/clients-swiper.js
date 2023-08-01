@@ -10,14 +10,7 @@ const clientsSwiper = () =>
       prevEl: '.swiper-button-prev',
     },
     breakpoints: {
-      640: {
-        slidesPerView: 2,
-        spaceBetween: 20,
-      },
-      768: {
-        centeredSlides: true,
-        slidesPerView: 2,
-      },
+      768: { slidesPerView: 2 },
       1200: {
         grid: { rows: 1 },
         slidesPerView: 4,

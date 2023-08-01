@@ -6,6 +6,9 @@
     @include media-desktop-1440 {
       font-size: 2rem;
     }
+    @include media-desktop-900 {
+      font-size: 1.8rem;
+    }
   }
 }
 
@@ -23,6 +26,13 @@
   }
   @include media-desktop-1200 {
     gap: 2px;
+  }
+  @include media-desktop-900 {
+    font-size: 1.2rem;
+    margin: 0 0 20px 0;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
   }
 
   &::before {
@@ -53,6 +63,9 @@
     @include media-desktop-1200 {
       font-size: 2rem;
     }
+    @include media-desktop-900 {
+      font-size: 1.8rem;
+    }
   }
 
   .funnel-tab-info__comment {
@@ -69,6 +82,10 @@
   @include media-desktop-1440 {
     padding-top: 100px;
   }
+  @include media-desktop-900 {
+    font-size: 0.8rem;
+    padding-top: 15px;
+  }
 
   .funnel-tab-income__card {
     border: solid 1px $color-bg-buttons-our-cases;
@@ -84,9 +101,18 @@
     line-height: 50px;
     border: solid 1px $color-text-section-title-colored;
     border-radius: 50%;
+    @include media-desktop-900 {
+      font-size: 2rem;
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+    }
   }
 
   .funnel-tab-income__cost {
     font-size: 2rem;
+    @include media-desktop-900 {
+      font-size: 1.6rem;
+    }
   }
 }

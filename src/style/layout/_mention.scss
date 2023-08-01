@@ -1,6 +1,9 @@
 .mention {
   background: $color-1-bg-sections;
   height: 1180px;
+  @include media-desktop-900 {
+    height: 976px;
+  }
 
   .mention-wrapper {
     padding: 100px 0 0 0;
@@ -8,9 +11,31 @@
     @include media-desktop-1900 {
       padding: 80px 1% 0 1%;
     }
+    @include media-desktop-900 {
+      padding: 50px 1% 10px 1%;
+    }
 
     .mention-swiper {
       padding-top: 25px;
+
+      @include media-desktop-900 {
+        position: relative;
+        max-width: 96vw;
+        top: -85px;
+        padding: 100px 0 48px 0;
+      }
+
+      .swiper-button {
+        @include media-desktop-900 {
+          top: 22px;
+        }
+        &-next {
+          right: 0px;
+        }
+        &-prev {
+          left: 82vw;
+        }
+      }
     }
 
     .mention__promo {
@@ -19,10 +44,23 @@
       line-height: 3rem;
       max-width: 780px;
       color: $color-light;
+      @include media-desktop-900 {
+        font-size: 1.6rem;
+        max-width: 490px;
+        margin-top: 0;
+        line-height: 1.8rem;
+        position: relative;
+        top: -65px;
+      }
     }
 
     .mention__btn {
       margin-top: 24px;
+      @include media-desktop-900 {
+        margin-top: 0;
+        position: relative;
+        top: -40px;
+      }
     }
   }
 }

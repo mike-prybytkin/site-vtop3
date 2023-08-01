@@ -1,24 +1,40 @@
 .price {
   min-height: 1707px;
   background: $color-2-bg-sections;
+  @include media-desktop-900 {
+    min-height: 1358px;
+  }
 
   .price__wrapper {
     padding: 100px 0 0 0;
     @include media-desktop-1900 {
       padding: 80px 1% 0 1%;
     }
+    @include media-desktop-900 {
+      padding: 50px 1% 10px 1%;
+    }
 
     .price__title {
       max-width: 645px;
+      @include media-desktop-900 {
+        max-width: 350px;
+      }
     }
 
     .price__card {
       margin-top: 70px;
+      @include media-desktop-900 {
+        margin-top: 17px;
+      }
 
       .price__card-wrapper {
         padding-bottom: 100px;
         @include flex($justify: center, $align: stretch);
         gap: 29px;
+        @include media-desktop-900 {
+          // justify-content: start;
+          padding-bottom: 0px;
+        }
       }
     }
   }

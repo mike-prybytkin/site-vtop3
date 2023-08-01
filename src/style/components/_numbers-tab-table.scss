@@ -1,5 +1,9 @@
 .numbers-tab-table {
   font-weight: 700;
+  @include media-desktop-900 {
+    font-size: 1.2rem;
+  }
+
   thead {
     text-align: center;
   
@@ -7,12 +11,18 @@
       height: 60px;
       vertical-align: middle;
       color: #BABABA;
+      @include media-desktop-900 {
+        height: 28px;
+      }
     }
   }
 
   tbody {
     tr {
       height: 60px;
+      @include media-desktop-900 {
+        height: 39px;
+      }
   
       td {
         width: 33%;
@@ -32,6 +42,9 @@
     margin-right: 10px;
     text-align: center;
     font-size: 2rem;
+    @include media-desktop-900 {
+      font-size: 1.2rem;
+    }
 
     &_visitors {
       color: $color-text-section-title-colored;

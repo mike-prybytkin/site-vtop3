@@ -22,14 +22,24 @@
           </div>
           <div class="contacts col-5 align-self-center">
             <div class="row gap-xxl-3 flex-nowrap contacts-wrapper">
-              <div class="col-5 contacts__tel company-contacts d-flex align-self-center">
+
+              <div class="col-1 contacts__tel contacts__tel_tablet company-contacts">
+                <a href="tel:+375292577007"><i class="fa fa-phone"></i></a>
+              </div>
+
+              <div class="col-5 contacts__tel contacts__tel_desktop company-contacts d-flex align-self-center">
                 <i class="fa fa-phone"></i>
                 <div class="company-contacts__show">
                   <span><strong>+375</strong> показать номер <i class="fa fa-caret-down"></i></span>
                   <a href="tel:+375292577007">+375 (29)257-70-07</a>
                 </div>
               </div>
-              <div class="col-4 contacts__email company-contacts d-flex align-self-center">
+
+              <div class="col-1 contacts__email contacts__email_tablet company-contacts">
+                <a href="mailto:3577007by@gmail.com"><i class="fa fa-envelope"></i></a>
+              </div>
+
+              <div class="col-4 contacts__email contacts__email_desktop company-contacts d-flex align-self-center">
                 <i class="fa fa-envelope"></i>
                 <div class="company-contacts__show">
                   <span>показать email <i class="fa fa-caret-down"></i></span>
@@ -755,7 +765,7 @@
                     <img class="our-cases-slide__img" src="./assets/png/our-cases-slider/our-cases-example.png"
                       alt="our-cases-example">
                   </div>
-                  <div class="col-7">
+                  <div class="col-8 col-lg-7">
                     <h5 class="our-cases-slide__title">Ремонт помещений, загородное строительство</h5>
                     <ul
                       class="nav nav-tabs our-cases-slide__button-wrapper align-items-center px-2 justify-content-between"
@@ -907,7 +917,7 @@
                               </div>
                             </div>
                           </div>
-                          <table class="numbers-tab-table table table-bordered mt-5 font-weight-bold">
+                          <table class="numbers-tab-table table table-bordered mt-3 mt-lg-5 font-weight-bold">
                             <thead>
                               <tr>
                                 <td class="table-active"></td>
@@ -1692,7 +1702,8 @@
         </div>
         <div>
           <h5 class="footer__title">Способ оплаты</h5>
-          <img src="./assets/png/pay.png" alt="pay">
+          <img class="footer__pay footer__pay_desktop" src="./assets/png/pay.png" alt="pay">
+          <img class="footer__pay footer__pay_tablet" src="./assets/png/pay-tablet.png" alt="pay">
         </div>
       </div>
     </div>

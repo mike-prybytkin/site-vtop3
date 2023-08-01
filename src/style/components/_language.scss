@@ -32,6 +32,9 @@
     @include media-desktop-1200 {
       padding: 5px;
     }
+    @include media-desktop-900 {
+      width: 65px;
+    }
 
     li {
       margin: 6px 0;

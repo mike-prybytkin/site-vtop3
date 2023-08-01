@@ -6,6 +6,11 @@
   font-size: 3.6rem;
   font-weight: 700;
   color: $color-light;
+  @include media-desktop-900 {
+    width: 230px;
+    height: 220px;
+    font-size: 1.4rem;
+  }
 
   .team-person-card__up {
     @include flex($justify: end, $align: end);
@@ -20,20 +25,33 @@
     .team-person-card__photo {
       width: 345px;
       height: 345px;
+      @include media-desktop-900 {
+        width: 138px;
+        height: 135px;
+      }
     }
   }
 
   .team-person-card__down {
     border-top: 3px solid $color-text-section-title-colored;
     padding: 0 30px;
+    @include media-desktop-900 {
+      padding: 8px 0 0 10px;
+    }
 
     .team-person-card__position {
       color: $color-text-section-title-colored;
       margin-top: 25px;
+      @include media-desktop-900 {
+        margin: 0;
+      }
     }
 
     .team-person-card__sertificates {
       font-size: 2.4rem;
+      @include media-desktop-900 {
+        font-size: 1.2rem;
+      }
 
       .team-person-card__links {
         @include flex($justify: start, $align: start);
@@ -46,6 +64,13 @@
 
           &:focus {
             outline: none;
+          }
+
+          img {
+            @include media-desktop-900 {
+              width: 30px;
+              height: 30px;
+            }
           }
         }
       }

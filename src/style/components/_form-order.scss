@@ -1,12 +1,21 @@
 .form-order {
   color: $color-text-light;
   font-size: 1.4rem;
+  @include media-desktop-900 {
+    font-size: 0.8rem;
+  }
 
   .form-order__label {
     margin-top: 10px;
+    @include media-desktop-900 {
+      margin-top: 3px;
+    }
 
     &_comment {
       margin-top: 20px;
+      @include media-desktop-900 {
+        margin-top: 9px;
+      }
     }
   }
 
@@ -15,16 +24,27 @@
     border-radius: 30px;
     padding: 0 15px;
     font-size: 2rem;
+    @include media-desktop-900 {
+      height: 20px;
+      font-size: 1rem;
+      border-radius: 10px;
+    }
 
     &_comment {
       height: 84px;
       line-height: 2rem;
       resize: none;
+      @include media-desktop-900 {
+        height: 46px;
+      }
     }
   }
 
   .form-order__check {
     margin: 15px 0 0 10px;
+    @include media-desktop-900 {
+      margin: 5px 0 0 2px;
+    }
 
     .form-order__check-input {
       width: 27px;
@@ -33,6 +53,11 @@
       border: solid 1px $color-text-section-title-colored;
       @include media-desktop-1200 {
         width: 64px;
+      }
+      @include media-desktop-900 {
+        width: 16px;
+        height: 13px;
+        background-size: contain;
       }
 
       &:checked {
@@ -51,10 +76,17 @@
       margin: 0 0 0 10px;
       cursor: pointer;
       line-height: 2rem;
+      @include media-desktop-900 {
+        font-size: 1rem;
+        line-height: 1.2rem;
+      }
     }
   }
 
   .form-order__btn {
     margin-top: 45px;
+    @include media-desktop-900 {
+      margin-top: 10px;
+    }
   }
 }

@@ -6,7 +6,6 @@
   @include media-desktop-1900 {
     width: 1400px;
   }
-
   @include media-desktop-1440 {
     width: 100%;
     left: -10px;
@@ -14,5 +13,14 @@
 
   .swiper-our-cases__wrapper {
     gap: 25px;
+    @include media-desktop-900 {
+      gap: 0;
+    }
+  }
+
+  .swiper-button-next {
+    @include media-desktop-900 {
+      right: 0px;
+    }
   }
 }

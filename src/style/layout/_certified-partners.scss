@@ -8,15 +8,24 @@
     padding: 0 1%;
     height: 500px;
   }
+  @include media-desktop-900 {
+    height: 352px;
+  }
 
   .certified-partners__title {
     max-width: 1450px;
     text-align: center;
+    @include media-desktop-900 {
+      max-width: 660px;
+    }
   }
 
   .certified-partners__links {
     @include flex();
     gap: 120px;
+    @include media-desktop-900 {
+      gap: 40px;
+    }
 
     .certified-partners__link {
 
