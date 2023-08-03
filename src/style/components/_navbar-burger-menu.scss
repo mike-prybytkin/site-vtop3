@@ -1,0 +1,125 @@
+#navbarBurgerMenu {
+  @media (min-width: $tablet-width-768) {
+    display: none !important;
+  }
+  position: absolute;
+  left: -8px;
+  right: -8px;
+  top: -23px;
+  z-index: -1;
+  background: $color-bg-header;
+  border-radius: 0 0 0 30px;
+
+  .nav-item {
+    font-size: 1.4rem;
+    white-space: nowrap;
+  }
+
+  .nav-link {
+    color: $color-text-light;
+    text-align: left;
+    white-space: nowrap;
+
+    &:focus {
+      outline: none;
+      color: $color-text-light;
+    }
+
+    &.move-to-second {
+      display: none;
+    }
+
+    &_2 {
+    &.move-to-third {
+        display: none;
+      }
+    }
+  }
+  
+  .navbar-nav {
+    padding: 40px 20px 25px 20px;
+    @extend %nav-linear-border;
+  
+    .nav-item {
+      &_all-services,
+      &_about {
+        text-decoration: underline;
+        color: $color-text-light;
+      }
+    } 
+  }
+  
+  .navbar-nav {
+    gap: 5px;
+  }
+  
+  ul.dropdown-menu {
+    margin: 0;
+    padding: 0;
+    width: fit-content;
+    background-color: $color-bg-header;
+    position: relative;
+    left: 0;
+    border: none;
+
+    &.show {
+      display: block !important;
+    }
+
+    li {
+      a.dropdown-item {
+        color: $color-text-light;
+        font-size: 1.4rem;
+        line-height: 1.6rem;
+        white-space: normal;
+        padding: 10px 0px;
+  
+        &:focus {
+          background: transparent;
+          -webkit-text-stroke: 0px;
+          outline: none;
+        }
+      }
+    }
+  }
+  
+  .dropdown {
+    .dropdown-menu {
+      border-radius: 0 0 0 30px;
+      @extend %nav-linear-border;
+    }
+  
+    .dropdown-menu_border-right {
+      border-radius: 0 0 30px 0;
+      @extend %nav-linear-border-right;
+    }
+  }
+  
+  .dropend {
+    .dropdown-menu {
+      border-radius: 0  30px 30px 0;
+      background-image: none;
+    }
+  }
+}
+
+.dropdown-item_buttons {
+  background-color: #9089a6 !important;
+  padding: 2px 10px !important;
+  border-radius: 0 15px 15px 0 !important;
+  font-size: 1.4rem;
+  color: $color-text-light !important;
+  -webkit-text-stroke: 1px;
+  @include flex ();
+
+
+  &:hover,
+  &:focus {
+    background-color: #9089a6;
+  }
+
+  span {
+    position: relative;
+    bottom: 7px;
+  }
+}

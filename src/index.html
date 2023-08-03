@@ -16,17 +16,22 @@
     <section class="header__top">
       <div class="container-xxl">
         <div class="row justify-content-between pe-4">
+          <div class="burger-button col-1 align-self-center ms-4">
+            <button class="navbar-toggler mt-2" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarBurgerMenu" aria-controls="navbarBurgerMenu" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <i class="fa fa-bars"></i>
+            </button>
+          </div>
           <div class="logo col-3">
             <a class="logo__link" href="/" alt="vtop3.by"><img class="logo__link-img" src="./assets/svg/vtop3-by.svg"
                 alt="vtop3.by"></a>
           </div>
           <div class="contacts col-5 align-self-center">
             <div class="row gap-xxl-3 flex-nowrap contacts-wrapper">
-
               <div class="col-1 contacts__tel contacts__tel_tablet company-contacts">
                 <a href="tel:+375292577007"><i class="fa fa-phone"></i></a>
               </div>
-
               <div class="col-5 contacts__tel contacts__tel_desktop company-contacts d-flex align-self-center">
                 <i class="fa fa-phone"></i>
                 <div class="company-contacts__show">
@@ -34,11 +39,9 @@
                   <a href="tel:+375292577007">+375 (29)257-70-07</a>
                 </div>
               </div>
-
               <div class="col-1 contacts__email contacts__email_tablet company-contacts">
                 <a href="mailto:3577007by@gmail.com"><i class="fa fa-envelope"></i></a>
               </div>
-
               <div class="col-4 contacts__email contacts__email_desktop company-contacts d-flex align-self-center">
                 <i class="fa fa-envelope"></i>
                 <div class="company-contacts__show">
@@ -64,6 +67,372 @@
         <div class="header__separator"></div>
 
         <nav class="header__nav navbar navbar-expand-md py-0">
+
+          <div class="collapse navbar-collapse" id="navbarBurgerMenu">
+            <ul class="navbar-nav navbar-nav_mobile">
+
+              <li class="nav-item nav-item_all-services nav-item_first-nesting nav-item_no-nesting">
+                <a class="nav-link" href="#">Все услуги</a>
+              </li>
+
+              <li class="nav-item dropend nav-item_first-nesting">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" id="navbarSeo"
+                  role="button">
+                  Продвижение сайтов (SEO)
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarSeo">
+                  <li class="dropdown-item dropdown-item_buttons nav-item_second-nesting">
+                    <button class="button button_menu-return" data-nesting="to-first"></button>
+                    <button class="button button_menu-close"></button>
+                    <span>Продвижение сайтов (SEO)</span>
+                  </li>
+                  <li class="nav-item_second-nesting">
+                    <a class="dropdown-item" href="https://vtop3.by/prodvizhenie-sajtov/prodvizhenie-po-pozicijam">
+                      Продвижение по позициям
+                    </a>
+                  </li>
+                  <li class="nav-item_second-nesting">
+                    <a class="dropdown-item" href="https://vtop3.by/prodvizhenie-sajtov/prodvizhenie-po-lidam">
+                      Продвижение по лидам
+                    </a>
+                  </li>
+                  <li class="nav-item_second-nesting">
+                    <a class="dropdown-item" href="https://vtop3.by/prodvizhenie-sajtov/prodvizhenie-po-trafiku">
+                      Продвижение по трафику
+                    </a>
+                  </li>
+                  <li class="nav-item_second-nesting">
+                    <a class="dropdown-item" href="https://vtop3.by/prodvizhenie-sajtov/prodvizhenie-sajtov-google">
+                      Продвижение сайтов Google
+                    </a>
+                  </li>
+                  <li class="nav-item_second-nesting">
+                    <a class="dropdown-item" href="https://vtop3.by/prodvizhenie-sajtov/prodvizhenie-sajtov-yandex">
+                      Продвижение сайтов Яндекс
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropend nav-item_first-nesting">
+                <a class="nav-link dropdown-toggle" id="navbarAd" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Контекстная реклама
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarAd">
+                  <li class="dropdown-item dropdown-item_buttons nav-item_second-nesting">
+                    <button class="button button_menu-return" data-nesting="to-first"></button>
+                    <button class="button button_menu-close"></button>
+                    <span>Контекстная реклама</span>
+                  </li>
+                  <li class="nav-item_second-nesting">
+                    <a class="dropdown-item"
+                      href="https://vtop3.by/kontekstnaja-reklama/kontekstnaja-reklama-oplata-za-lidy">
+                      Контекстная реклама с оплатой за лиды
+                    </a>
+                  </li>
+                  <li class="nav-item_second-nesting">
+                    <a class="dropdown-item"
+                      href="https://vtop3.by/kontekstnaja-reklama/kontekstnaja-reklama-fiksirovannaja-oplata">
+                      Контекстная реклама с фиксированной оплатой
+                    </a>
+                  </li>
+                  <li class="nav-item dropend nav-item_second-nesting">
+                    <a class="dropdown-item dropdown-toggle nav-link_2" role="menu" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      Реклама в Яндекс.Директ
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li class="dropdown-item dropdown-item_buttons nav-item_third-nesting">
+                        <button class="button button_menu-return" data-nesting="to-second"></button>
+                        <button class="button button_menu-close"></button>
+                        <span>Реклама в Яндекс.Директ</span>
+                      </li>
+                      <li class="nav-item_third-nesting">
+                        <a class="dropdown-item"
+                          href="https://vtop3.by/kontekstnaja-reklama/kontekstnaja-reklama-oplata-za-lidy">Настройка
+                          контекстной рекламы в Яндекс.Директ
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropend nav-item_first-nesting">
+                <a class="nav-link dropdown-toggle" id="navbarCreateSites" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Создание сайтов
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarCreateSites">
+                  <li class="dropdown-item dropdown-item_buttons nav-item_second-nesting">
+                    <button class="button button_menu-return" data-nesting="to-first"></button>
+                    <button class="button button_menu-close"></button>
+                    <span>Создание сайтов</span>
+                  </li>
+                  <li class="nav-item_second-nesting">
+                    <a class="dropdown-item" href="https://vtop3.by/sozdanie-sajtov/verstka">Вёрстка сайтов</a>
+                  </li>
+                  <li class="nav-item_second-nesting">
+                    <a class="dropdown-item" href="https://vtop3.by/sozdanie-sajtov/administrirovanie-sajtov">
+                      Администрирование сайтов
+                    </a>
+                  </li>
+                  <li class="nav-item_second-nesting">
+                    <a class="dropdown-item" href="https://vtop3.by/sozdanie-sajtov/dorabotka-sajtov">
+                      Доработка сайтов
+                    </a>
+                  </li>
+                  <li class="nav-item_second-nesting">
+                    <a class="dropdown-item" href="https://vtop3.by/sozdanie-sajtov/napolnenie-sajtov">
+                      Наполнение сайтов
+                    </a>
+                  </li>
+                  <li class="nav-item_second-nesting">
+                    <a class="dropdown-item" href="https://vtop3.by/sozdanie-sajtov/razrabotka-lendingov">
+                      Разработка сайтов лендингов
+                    </a>
+                  </li>
+                  <li class="nav-item_second-nesting">
+                    <a class="dropdown-item" href="https://vtop3.by/sozdanie-sajtov/razrabotka-internet-magazinov">
+                      Разработка интернет магазинов
+                    </a>
+                  </li>
+                  <li class="nav-item dropend nav-item_second-nesting">
+                    <a class="dropdown-item dropdown-toggle nav-link_2" role="menu">
+                      Разработка сайтов с CMS
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li class="dropdown-item dropdown-item_buttons nav-item_third-nesting">
+                        <button class="button button_menu-return" data-nesting="to-second"></button>
+                        <button class="button button_menu-close"></button>
+                        <span>Разработка веб-дизайна</span>
+                      </li>
+                      <li class="nav-item_third-nesting">
+                        <a class="dropdown-item" href="https://vtop3.by/sozdanie-sajtov/cms/razrabotka-wordpress">
+                          Разработка сайтов на WordPress
+                        </a>
+                      </li>
+                      <li class="nav-item_third-nesting">
+                        <a class="dropdown-item" href="https://vtop3.by/sozdanie-sajtov/cms/razrabotka-bitrix">
+                          Разработка сайтов на 1С-Битрикс
+                        </a>
+                      </li>
+                      <li class="nav-item_third-nesting">
+                        <a class="dropdown-item" href="https://vtop3.by/sozdanie-sajtov/cms/razrabotka-opencart">
+                          Разработка сайтов на OpenCart
+                        </a>
+                      </li>
+                      <li class="nav-item_third-nesting">
+                        <a class="dropdown-item" href="https://vtop3.by/sozdanie-sajtov/cms/razrabotka-modx">
+                          Разработка сайтов на MODX
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item_second-nesting">
+                    <a class="dropdown-item" href="https://vtop3.by/sozdanie-sajtov/razrabotka-korporativnyh-sajtov">
+                      Разработка корпоративных сайтов
+                    </a>
+                  </li>
+                  <li class="nav-item_second-nesting">
+                    <a class="dropdown-item" href="https://vtop3.by/sozdanie-sajtov/razrabotka-sajtov-vizitok">
+                      Разработка сайтов визиток
+                    </a>
+                  </li>
+                  <li class="nav-item_second-nesting">
+                    <a class="dropdown-item" href="https://vtop3.by/sozdanie-sajtov/razrabotka-sajtov-portfolio">
+                      Разработка сайтов портфолио
+                    </a>
+                  </li>
+                  <li class="nav-item_second-nesting">
+                    <a class="dropdown-item" href="https://vtop3.by/sozdanie-sajtov/razrabotka-informacionnyh-sajtov">
+                      Разработка информационных сайтов
+                    </a>
+                  </li>
+                  <li class="nav-item_second-nesting">
+                    <a class="dropdown-item" href="https://vtop3.by/sozdanie-sajtov/razrabotka-sajtov-blogov">
+                      Разработка сайтов блогов
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropend nav-item_first-nesting">
+                <a class="nav-link dropdown-toggle" id="navbarCreateDesign" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Разработка дизайна
+                </a>
+                <ul class="dropdown-menu dropdown-menu_border-right" aria-labelledby="navbarCreateDesign">
+                  <li class="dropdown-item dropdown-item_buttons nav-item_second-nesting">
+                    <button class="button button_menu-return" data-nesting="to-first"></button>
+                    <button class="button button_menu-close"></button>
+                    <span>Разработка дизайна</span>
+                  </li>
+                  <li class="nav-item dropend nav-item_second-nesting">
+                    <a class="dropdown-item dropdown-toggle nav-link_2 nav-link_right-caret" role="menu"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      Разработка веб-дизайна
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li class="dropdown-item dropdown-item_buttons nav-item_third-nesting">
+                        <button class="button button_menu-return" data-nesting="to-second"></button>
+                        <button class="button button_menu-close"></button>
+                        <span>Разработка веб-дизайна</span>
+                      </li>
+                      <li class="nav-item_third-nesting">
+                        <a class="dropdown-item" href="https://vtop3.by/dizajn/web-dizajn/redizajn-sajtov">
+                          Редизайн сайта
+                        </a>
+                      </li>
+                      <li class="nav-item_third-nesting">
+                        <a class="dropdown-item" href="https://vtop3.by/dizajn/web-dizajn/dizajn-lendinga">
+                          Разработка дизайна лендинга
+                        </a>
+                      </li>
+                      <li class="nav-item_third-nesting">
+                        <a class="dropdown-item" href="https://vtop3.by/dizajn/web-dizajn/dizajn-korporativnogo-sajta">
+                          Разработка дизайна корпоративных сайтов
+                        </a>
+                      </li>
+                      <li class="nav-item_third-nesting">
+                        <a class="dropdown-item" href="https://vtop3.by/dizajn/web-dizajn/dizajn-internet-magazina">
+                          Разработка дизайна интернет магазина
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item_second-nesting">
+                    <a class="dropdown-item" href="https://vtop3.by/dizajn/dizajn-banner">
+                      Разработка баннеров
+                    </a>
+                  </li>
+                  <li class="nav-item_second-nesting">
+                    <a class="dropdown-item" href="https://vtop3.by/dizajn/dizajn-logotipa">
+                      Создание логотипов
+                    </a>
+                  </li>
+                  <li class="nav-item_second-nesting">
+                    <a class="dropdown-item" href="https://vtop3.by/dizajn/dizajn-vizitki">
+                      Разработка дизайна визиток
+                    </a>
+                  </li>
+
+                  <li class="nav-item dropend nav-item_second-nesting">
+                    <a class="dropdown-item dropdown-toggle nav-link_2 nav-link_right-caret" role="menu"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      Дизайн сувенирной продукции
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li class="dropdown-item dropdown-item_buttons nav-item_third-nesting">
+                        <button class="button button_menu-return" data-nesting="to-second"></button>
+                        <button class="button button_menu-close"></button>
+                        <span>Дизайн сувенирной продукции</span>
+                      </li>
+                      <li class="nav-item_third-nesting">
+                        <a class="dropdown-item"
+                          href="https://vtop3.by/dizajn/dizajn-suvenirnoj-produkcii/dizajn-ruchek">
+                          Дизайн шариковых ручек
+                        </a>
+                      </li>
+                      <li class="nav-item_third-nesting">
+                        <a class="dropdown-item"
+                          href="https://vtop3.by/dizajn/dizajn-suvenirnoj-produkcii/dizajn-bloknotov">
+                          Разработка дизайна блокнотов
+                        </a>
+                      </li>
+                      <li class="nav-item_third-nesting">
+                        <a class="dropdown-item"
+                          href="https://vtop3.by/dizajn/dizajn-suvenirnoj-produkcii/dizajn-kalendarej">
+                          Разработка дизайна календарей
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item_second-nesting">
+                    <a class="dropdown-item" href="https://vtop3.by/dizajn/razrabotka-menu">
+                      Разработка меню
+                    </a>
+                  </li>
+                  <li class="nav-item_second-nesting">
+                    <a class="dropdown-item" href="https://vtop3.by/dizajn/dizajn-upakovki">
+                      Разработка дизайна упаковки
+                    </a>
+                  </li>
+                  <li class="nav-item_second-nesting">
+                    <a class="dropdown-item" href="https://vtop3.by/dizajn/dizajn-etiketki">
+                      Разработка дизайна этикетки
+                    </a>
+                  </li>
+                  <li class="nav-item_second-nesting">
+                    <a class="dropdown-item" href="https://vtop3.by/dizajn/dizajn-listovok">
+                      Разработка дизайна листовок
+                    </a>
+                  </li>
+                  <li class="nav-item_second-nesting">
+                    <a class="dropdown-item" href="https://vtop3.by/dizajn/dizajn-firmennych-blankov">
+                      Дизайн фирменных бланков
+                    </a>
+                  </li>
+                  <li class="nav-item_second-nesting">
+                    <a class="dropdown-item" href="https://vtop3.by/dizajn/dizajn-bukletov">
+                      Разработка дизайна буклетов
+                    </a>
+                  </li>
+                  <li class="nav-item_second-nesting">
+                    <a class="dropdown-item" href="https://vtop3.by/dizajn/dizajn-broshjur">
+                      Разработка дизайна брошюр
+                    </a>
+                  </li>
+                  <li class="nav-item_second-nesting">
+                    <a class="dropdown-item" href="https://vtop3.by/dizajn/dizajn-konvertov">
+                      Разработка дизайна конвертов
+                    </a>
+                  </li>
+                  <li class="nav-item_second-nesting">
+                    <a class="dropdown-item" href="https://vtop3.by/dizajn/razrabotka-prezentacii">
+                      Разработка дизайна презентации
+                    </a>
+                  </li>
+                  <li class="nav-item_second-nesting">
+                    <a class="dropdown-item" href="https://vtop3.by/dizajn/firmennyj-stil">
+                      Дизайн фирменного стиля
+                    </a>
+                  </li>
+                  <li class="nav-item_second-nesting">
+                    <a class="dropdown-item" href="https://vtop3.by/dizajn/razrabotka-brenda">
+                      Разработка бренда
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropend nav-item_first-nesting">
+                <a class="nav-link dropdown-toggle" id="navbarSmm" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Продвижение в соц сетях (SMM)
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarSmm">
+                  <li class="dropdown-item dropdown-item_buttons nav-item_second-nesting">
+                    <button class="button button_menu-return" data-nesting="to-first"></button>
+                    <button class="button button_menu-close"></button>
+                    <span>Продвижение в соц сетях (SMM)</span>
+                  </li>
+                  <li class="nav-item_second-nesting"><a class="dropdown-item" href="#">Link-1</a></li>
+                  <li class="nav-item_second-nesting"><a class="dropdown-item" href="#">Link-2</a></li>
+                  <li class="nav-item_second-nesting"><a class="dropdown-item" href="#">Link-3</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item nav-item_about nav-item_first-nesting nav-item_no-nesting">
+                <a class="nav-link" href="https://vtop3.by/o-kompanii">
+                  О компании
+                </a>
+              </li>
+            </ul>
+          </div>
+
+
           <div class="collapse navbar-collapse">
             <ul class="navbar-nav">
 
@@ -74,7 +443,7 @@
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="https://vtop3.by/prodvizhenie-sajtov" id="navbarSeo"
                   role="button">
-                  Продвижение сатов (SEO)
+                  Продвижение сайтов (SEO)
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarSeo">
                   <li>

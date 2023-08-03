@@ -72,3 +72,28 @@
     background: $color-text-section-title-colored;
   }
 }
+
+
+%nav-mabile-buttons {
+  content: '';
+  width: 26px;
+  height: 26px;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.button_menu-return {
+  &::after {
+    @extend %nav-mabile-buttons;
+    background-image: url('../assets/png/icon_back.png');
+  }
+}
+
+.button_menu-close {
+  &::after {
+    @extend %nav-mabile-buttons;
+    background-image: url('../assets/png/icon_cross.png');
+  }
+}

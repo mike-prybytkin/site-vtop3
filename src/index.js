@@ -8,6 +8,7 @@ import clientsSwiper from './script/clients-swiper/clients-swiper';
 import showHideContacts from './script/show-hide-contacts/show-hide-contacts';
 import toggleLanguage from './script/toggle-language/toggle-language';
 import initFormCalculator from './script/form-calculator/init-form-calculator';
+import burgerMenu from './script/burger-menu/burger-menu';
 
 promoSwiper();
 ourCasesSwiper();
@@ -16,5 +17,6 @@ clientsSwiper();
 showHideContacts();
 toggleLanguage();
 initFormCalculator();
+burgerMenu();
 
 setTimeout(() => advantagesTabsFirstLoad(), 0);
