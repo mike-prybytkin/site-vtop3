@@ -6,14 +6,28 @@
   @include media-desktop-900 {
     height: 467px;
   }
+  @include media-tablet-700 {
+    flex-direction: row;
+    padding-top: 90px;
+  }
 
   .promo__col {
     position: relative;
     &_1 {
       z-index: 2;
+      @include media-tablet-700 {
+        order: 2;
+        width: 100%;
+        background: $color-1-bg-sections;
+      }
     }
     &_2 {
       z-index: 1;
+      padding: 0;
+      @include media-tablet-700 {
+        order: 1;
+        width: 100%;
+      }
     }
   }
 }
@@ -41,6 +55,9 @@
     margin-top: 170px;
     line-height: 4.1rem;
   }
+  @include media-tablet-700{
+    margin-top: 20px;
+  }
 }
 
 .promo__cards {
@@ -57,13 +74,25 @@
   @include media-desktop-900 {
     max-width: 430px;
   }
+  @include media-tablet-700 {
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto !important;
+  }
 
   .promo__card {
     @include media-desktop-900 {
       margin-top: 5px;
     }
+    @include media-tablet-700 {
+      width: 100%;
+    }
     .card {
       background: $color-bg-promo-card;
+      @include media-tablet-700 {
+        padding: 10px 0;
+      }
+
       .card-text {
         @include font-additionary($size: 2rem);
         line-height: 2.5rem;
@@ -107,5 +136,8 @@
   margin-top: 70px;
   @include media-desktop-900 {
     margin-top: 17px;
+  }
+  @include media-tablet-700 {
+    margin-bottom: 20px;
   }
 }

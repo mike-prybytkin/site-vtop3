@@ -34,6 +34,9 @@
         }
         &-prev {
           left: 82vw;
+          @include media-tablet-700 {
+            left: 78vw;
+          }
         }
       }
     }

@@ -39,6 +39,7 @@
         @include media-desktop-1200 {
           gap: 10%;
           row-gap: 20px;
+          margin: 0;
         }
 
         .video-help__video {

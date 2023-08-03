@@ -25,25 +25,38 @@
     }
   }
 
-  .our-cases-slide__img {
-    @include media-desktop-1900 {
-      height: 400px;
-      width: auto;
-      margin-top: 180px;
+  .our-cases-slide__img-wrapper {
+    @include media-tablet-700 {
+      display: none;
     }
-    @include media-desktop-1440 {
-      height: 300px;
+
+    .our-cases-slide__img {
+      @include media-desktop-1900 {
+        height: 400px;
+        width: auto;
+        margin-top: 180px;
+      }
+      @include media-desktop-1440 {
+        height: 300px;
+      }
+      @include media-desktop-1200 {
+        height: 240px;
+      }
+      @include media-desktop-900 {
+        height: 180px;
+        width: 208px;
+        margin-top: 130px;
+      }
     }
-    @include media-desktop-1200 {
-      height: 240px;
-    }
-    @include media-desktop-900 {
-      height: 180px;
-      width: 208px;
-      margin-top: 130px;
+  }
+
+  .our-cases-slide__info-wrapper {
+    @include media-tablet-700 {
+      width: 100%;
     }
   }
 }
+
 
 .our-cases-slide__title {
   @include font-primary($size: 3.6rem, $weight: 700, $color: $color-text-dark);
@@ -60,8 +73,8 @@
     font-size: 3rem;
   }
   @include media-desktop-900 {
-    width: 600px;
-    left: calc(50% - (600px / 2));
+    width: 98%;
+    left: 1%;
     font-size: 2.4rem;
     top: 20px;
   }
@@ -85,6 +98,12 @@
   @include media-desktop-900 {
     height: 56px;
     top: 88px;
+    width: 98%;
+    left: 1%;
+  }
+
+  .nav-item {
+    width: 30%;
   }
 }
 

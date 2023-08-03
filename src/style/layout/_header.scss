@@ -11,6 +11,14 @@
       height: 80px;
     }
 
+    .header__logo {
+      @include media-tablet-700 {
+        position: absolute;
+        left: 13%;
+        padding: 0;
+      }
+    }
+
     .header__separator {
       position: absolute;
       background: linear-gradient(to right, transparent 0%, $color-light 50%, transparent 100%);
@@ -34,6 +42,11 @@
     }
     @include media-desktop-900 {
       height: 467px;
+    }
+    @include media-tablet-700 {
+      height: auto;
+      min-height: 790px;
+      background: $color-5-bg-sections;
     }
   }
 }

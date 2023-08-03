@@ -1,25 +1,25 @@
-@mixin font-primary ($size: 1.6rem, $weight: 400, $color: $color-text-light) {
+@mixin font-primary($size: 1.6rem, $weight: 400, $color: $color-text-light) {
   font-family: 'Raleway', 'Verdana', 'Geneva', sans-serif;
   font-size: $size;
   font-weight: $weight;
   color: $color;
 }
 
-@mixin font-additionary ($size: 1.4rem, $weight: 700, $color: $color-text-light) {
+@mixin font-additionary($size: 1.4rem, $weight: 700, $color: $color-text-light) {
   font-family: 'Inter', 'Arial Narrow', 'Arial', sans-serif;
   font-size: $size;
   font-weight: $weight;
   color: $color;
 }
 
-@mixin font-numbers ($size: 1.4rem, $weight: 700, $color: $color-text-light) {
-  font-family: 'Yantramanav', 'Arial' , 'Arial Narrow', sans-serif;
+@mixin font-numbers($size: 1.4rem, $weight: 700, $color: $color-text-light) {
+  font-family: 'Yantramanav', 'Arial', 'Arial Narrow', sans-serif;
   font-size: $size;
   font-weight: $weight;
   color: $color;
 }
 
-@mixin flex ($justify: center, $align: center, $flow: row wrap) {
+@mixin flex($justify: center, $align: center, $flow: row wrap) {
   display: flex;
   justify-content: $justify;
   align-items: $align;
@@ -27,21 +27,37 @@
 }
 
 @mixin media-desktop-1900 {
-  @media (max-width: $desktop-width-1900) { @content; }
+  @media (max-width: $desktop-width-1900) {
+    @content;
+  }
 }
 
 @mixin media-desktop-1440 {
-  @media (max-width: $desktop-width-1440) { @content; }
+  @media (max-width: $desktop-width-1440) {
+    @content;
+  }
 }
 
 @mixin media-desktop-1200 {
-  @media (max-width: $desktop-width-1200) { @content; }
+  @media (max-width: $desktop-width-1200) {
+    @content;
+  }
 }
 
 @mixin media-desktop-900 {
-  @media (max-width: $desktop-width-900) { @content; }
+  @media (max-width: $desktop-width-900) {
+    @content;
+  }
 }
 
 @mixin media-tablet-768 {
-  @media (max-width: $tablet-width-768) { @content; }
+  @media (max-width: $tablet-width-768) {
+    @content;
+  }
+}
+
+@mixin media-tablet-700 {
+  @media (max-width: $tablet-width-700) {
+    @content;
+  }
 }

@@ -58,6 +58,9 @@
     background-size: contain;
     line-height: 1.4rem;
   }
+  @include media-tablet-700 {
+    background-size: cover;
+  }
 }
 
 .mention-slide__video {
