@@ -10,9 +10,24 @@
     color: $color-text-lang;
     cursor: pointer;
     width: fit-content;
-  
+
+    .language__select {
+      @include media-mobile-576 {
+        display: none;
+      }
+    }
+
+    .language__ico {
+      @include media-mobile-576 {
+        width: 22px;
+      }
+    }
+
     .language__caret {
       color: $color-text-light;
+      @include media-mobile-576 {
+        font-size: 1.2rem;
+      }
     }
   }
 
@@ -35,13 +50,28 @@
     @include media-desktop-900 {
       width: 65px;
     }
+    @include media-mobile-576 {
+      left: -5px;
+      width: 55px;
+      top: 20px;
+      padding-top: 15px;
+    }
 
     li {
       margin: 6px 0;
 
       a {
+        @include media-mobile-576 {
+          font-size: 1.2rem;
+        }
+
         span {
           font-weight: 400;
+        }
+        img {
+          @include media-mobile-576  {
+            width: 22px;
+          }
         }
       }
     }

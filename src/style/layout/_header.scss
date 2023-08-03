@@ -10,6 +10,10 @@
     @include media-tablet-768 {
       height: 80px;
     }
+    @include media-mobile-576 {
+      height: 57px;
+      border-radius: 0 0 30px 30px;
+    }
 
     .header__logo {
       @include media-tablet-700 {
@@ -47,6 +51,9 @@
       height: auto;
       min-height: 790px;
       background: $color-5-bg-sections;
+    }
+    @include media-mobile-576 {
+      min-height: 635px;
     }
   }
 }

@@ -9,4 +9,10 @@
   &:focus {
     outline: none;
   }
+
+  .client-logo__img {
+    @include media-mobile-576 {
+      transform: scale(0.8);
+    }
+  }
 }

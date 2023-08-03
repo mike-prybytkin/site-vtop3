@@ -10,6 +10,9 @@
     flex-direction: row;
     padding-top: 90px;
   }
+  @include media-mobile-576 {
+    padding-top: 60px;
+  }
 
   .promo__col {
     position: relative;
@@ -58,6 +61,12 @@
   @include media-tablet-700{
     margin-top: 20px;
   }
+  @include media-mobile-576 {
+    font-size: 3rem;
+    width: 100%;
+    line-height: 3.5rem;
+    margin-top: 12px;
+  }
 }
 
 .promo__cards {
@@ -79,6 +88,9 @@
     width: 100%;
     margin: 0 auto !important;
   }
+  @include media-mobile-576 {
+    gap: 10px;
+  }
 
   .promo__card {
     @include media-desktop-900 {
@@ -87,10 +99,18 @@
     @include media-tablet-700 {
       width: 100%;
     }
+    @include media-mobile-576 {
+      margin: 0;
+      padding: 0;
+    }
+
     .card {
       background: $color-bg-promo-card;
       @include media-tablet-700 {
         padding: 10px 0;
+      }
+      @include media-mobile-576 {
+        min-height: 50px;
       }
 
       .card-text {

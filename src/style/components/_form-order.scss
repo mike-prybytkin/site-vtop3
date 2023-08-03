@@ -88,5 +88,8 @@
     @include media-desktop-900 {
       margin-top: 10px;
     }
+    @include media-mobile-576 {
+      margin-top: 20px;
+    }
   }
 }

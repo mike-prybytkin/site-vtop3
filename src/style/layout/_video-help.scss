@@ -8,6 +8,9 @@
     height: auto;
     min-height: 967px;
   }
+  @include media-mobile-576 {
+    min-height: 574px;
+  }
 
   .video-help-wrapper {
     padding: 100px 0 0 0;
@@ -18,13 +21,24 @@
     @include media-desktop-900 {
       padding: 50px 1% 10px 1%;
     }
+    @include media-mobile-576 {
+      padding: 30px 2%;
+    }
 
     .video-help__title {
       text-align: center;
+      @include media-mobile-576 {
+        text-align: left;
+      }
       p {
         @include media-desktop-900 {
           text-transform: uppercase;
           margin-top: 20px;
+        }
+        @include media-mobile-576 {
+          font-size: 2.8rem;
+          font-weight: 600;
+          margin-top: 12px;
         }
       }
     }
@@ -55,6 +69,10 @@
             width: 640px;
             height: 360px;
           }
+          @include media-mobile-576 {
+            width: 300px;
+            height: 168px;
+          }
   
           iframe {
             width: 100%;
@@ -67,6 +85,10 @@
             width: 200px;
             order: 1;
           }
+          @include media-mobile-576 {
+            width: auto;
+          }
+
           img {
             @include media-desktop-1900 {
               width: auto;
@@ -75,10 +97,12 @@
             @include media-desktop-900 {
               height: 350px;
             }
+            @include media-mobile-576 {
+              height: 160px;
+            }
           }
         }
       }
-    
     }
   }
 }

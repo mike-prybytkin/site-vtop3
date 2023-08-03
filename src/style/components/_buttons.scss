@@ -15,6 +15,10 @@
   @include media-desktop-900 {
     font-size: 1.4rem;
   }
+  @include media-mobile-576 {
+    height: 54px;
+    padding: 0 35px;
+  }
 
   &:hover {
     box-shadow: $shadow-button;
@@ -41,6 +45,9 @@
     padding-top: 13px;
     width: 100%;
   }
+  // @include media-mobile-576 {
+  //   display: none;
+  // }
 
   &:hover {
     color: $color-text-section-title-colored;

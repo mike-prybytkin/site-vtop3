@@ -24,6 +24,9 @@
     @include media-tablet-700 {
       flex-direction: column;
     }
+    @include media-mobile-576 {
+      padding: 0 2%;
+    }
   }
 }
 
@@ -38,11 +41,18 @@
   @include media-tablet-700 {
     margin-top: 30px;
   }
+  @include media-mobile-576 {
+    margin-top: 15px;
+  }
 
   p {
     &:first-of-type {
       @include media-desktop-900 {
         font-size: 2.4rem;
+      }
+      @include media-mobile-576 {
+        font-size: 2.8rem;
+        margin-bottom: 10px;
       }
     }
   }
@@ -60,6 +70,9 @@
     @include media-desktop-900 {
       font-size: 5rem;
     }
+    @include media-mobile-576 {
+      font-size: 3.6rem;
+    }
   }
   .section-title-comment {
     margin: 0;
@@ -75,6 +88,9 @@
       margin-top: 8px;
       font-size: 1.6rem;
       line-height: 2.2rem;
+    }
+    @include media-mobile-576 {
+      display: none;
     }
   }
 }
@@ -95,6 +111,9 @@
     padding: 30px 0 0 10px;
     flex-basis: 340px;
   }
+  @include media-mobile-576 {
+    padding: 20px 0 0 0;
+  }
 
   .order__form-title {
     font-size: 3.6rem;
@@ -109,6 +128,9 @@
     margin: 10px 0 0 10px;
     @include media-desktop-900 {
       margin: 0 0 0 10px;
+    }
+    @include media-mobile-576 {
+      margin: 0;
     }
   }
 }

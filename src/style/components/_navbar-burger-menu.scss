@@ -4,7 +4,7 @@
   }
   position: absolute;
   left: -8px;
-  right: -8px;
+  right: -7.5px;
   top: -23px;
   z-index: -1;
   background: $color-bg-header;
@@ -111,6 +111,9 @@
   color: $color-text-light !important;
   -webkit-text-stroke: 1px;
   @include flex ();
+  @include media-mobile-576 {
+    padding: 2px 0px !important;
+  }
 
 
   &:hover,

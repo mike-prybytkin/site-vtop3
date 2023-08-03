@@ -5,7 +5,7 @@ const promoSwiper = () =>
   new Swiper('.promo-swiper', {
     modules: [Autoplay],
     loop: true,
-    autoplay: { delay: 5000 },
+    // autoplay: { delay: 5000 },
   });
 
 export default promoSwiper;

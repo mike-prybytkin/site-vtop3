@@ -11,6 +11,11 @@
     height: 220px;
     font-size: 1.4rem;
   }
+  @include media-mobile-576 {
+    width: 300px;
+    height: 287px;
+    font-size: 1.8rem;
+  }
 
   .team-person-card__up {
     @include flex($justify: end, $align: end);
@@ -28,6 +33,10 @@
       @include media-desktop-900 {
         width: 138px;
         height: 135px;
+      }
+      @include media-mobile-576 {
+        width: 178px;
+        height: 180px;
       }
     }
   }

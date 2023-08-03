@@ -11,12 +11,21 @@
   @include media-desktop-900 {
     height: 352px;
   }
+  @include media-mobile-576 {
+    height: auto;
+    min-height: 422px;
+    padding: 30px 0;
+    gap: 15px;
+  }
 
   .certified-partners__title {
     max-width: 1450px;
     text-align: center;
     @include media-desktop-900 {
       max-width: 660px;
+    }
+    @include media-mobile-576 {
+      width: 100%
     }
   }
 
@@ -26,8 +35,29 @@
     @include media-desktop-900 {
       gap: 40px;
     }
+    @include media-mobile-576 {
+      gap: 20px;
+    }
 
     .certified-partners__link {
+
+      &_google {
+        img {
+          @include media-mobile-576 {
+            width: 140px;
+            height: 135px;
+          }
+        }
+      }
+
+      &_hoster {
+        img {
+          @include media-mobile-576 {
+            width: 250px;
+            height: 110px;
+          }
+        }
+      }
 
       img {
         @extend %transition;

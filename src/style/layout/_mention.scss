@@ -4,6 +4,9 @@
   @include media-desktop-900 {
     height: 976px;
   }
+  @include media-mobile-576 {
+    height: 1014px;
+  }
 
   .mention-wrapper {
     padding: 100px 0 0 0;
@@ -13,6 +16,9 @@
     }
     @include media-desktop-900 {
       padding: 50px 1% 10px 1%;
+    }
+    @include media-mobile-576 {
+      padding: 30px 2% 30px 2%;
     }
 
     .mention-swiper {
@@ -24,18 +30,32 @@
         top: -85px;
         padding: 100px 0 48px 0;
       }
+      @include media-mobile-576 {
+        top: -27px;
+      }
 
       .swiper-button {
         @include media-desktop-900 {
           top: 22px;
         }
+        @include media-mobile-576 {
+          top: 50px;
+        }
+
         &-next {
           right: 0px;
+          @include media-mobile-576 {
+            right: 2px;
+          }
         }
+
         &-prev {
           left: 82vw;
           @include media-tablet-700 {
             left: 78vw;
+          }
+          @include media-mobile-576 {
+            left: 59vw;
           }
         }
       }
@@ -55,6 +75,25 @@
         position: relative;
         top: -65px;
       }
+      @include media-mobile-576 {
+        top: -27px;
+      }
+
+      .mention-text-mobile {
+        color: $color-text-section-title-colored;
+        font-weight: 700;
+        font-size: 1.8rem;
+        display: none;
+        @include media-mobile-576 {
+          display: inline-block;
+        }
+      }
+      .mention-text-tablet {
+        display: inline-block;
+        @include media-mobile-576 {
+          display: none;
+        }
+      }
     }
 
     .mention__btn {
@@ -63,6 +102,9 @@
         margin-top: 0;
         position: relative;
         top: -40px;
+      }
+      @include media-mobile-576 {
+        top: 0px;
       }
     }
   }

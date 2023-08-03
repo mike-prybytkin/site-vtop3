@@ -10,11 +10,22 @@
     height: 64px;
     width: 278px;
   }
+  @include media-mobile-576 {
+    height: 35px;
+    width: 150px;
+  }
 
   .logo__link {
     position: absolute;
     top: 40%;
     left:50%;
     transform: translate(-50%, -50%);
+    
+    .logo__link-img {
+      @include media-mobile-576 {
+        width: 80px;
+        height: 25px;
+      }
+    }
   }
 }

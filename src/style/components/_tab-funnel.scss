@@ -34,6 +34,9 @@
       margin-bottom: 0;
     }
   }
+  @include media-mobile-576 {
+    margin: 0 0 4px 0;
+  }
 
   &::before {
     content: "";
@@ -90,6 +93,9 @@
   .funnel-tab-income__card {
     border: solid 1px $color-bg-buttons-our-cases;
     padding: 10px;
+    @include media-mobile-576 {
+      width: 100%;
+    }
   }
 
   .funnel-tab-income__ico {

@@ -13,6 +13,9 @@
     @include media-desktop-900 {
       padding: 50px 1% 10px 1%;
     }
+    @include media-mobile-576 {
+      padding: 28px 2% 32px 2%;
+    }
 
     .price__title {
       max-width: 645px;
@@ -32,8 +35,11 @@
         @include flex($justify: center, $align: stretch);
         gap: 29px;
         @include media-desktop-900 {
-          // justify-content: start;
           padding-bottom: 0px;
+        }
+        @include media-mobile-576 {
+          margin-top: 30px;
+          gap: 20px;
         }
       }
     }

@@ -61,3 +61,14 @@
     @content;
   }
 }
+
+@mixin media-mobile-576 {
+  @media (max-width: $mobile-width-576) {
+    @content;
+  }
+}
+
+@mixin scrollbar ($color, $br-radius) {
+  background-color: $color;
+  border-radius: $br-radius;
+}

@@ -17,6 +17,17 @@
     width: 97% !important;
     height: 477px !important;
   }
+  @include media-mobile-576 {
+    margin-left: 0px;
+    width: 100% !important;
+    padding: 40px 20px 15px 20px;
+  }
+
+  .our-cases-slide__wrapper {
+    @include media-mobile-576 {
+      width: 100%;
+    }
+  }
 
   .our-cases-slide__modal-btn {
     margin-top: 20px;
@@ -54,6 +65,9 @@
     @include media-tablet-700 {
       width: 100%;
     }
+    @include media-mobile-576 {
+      padding: 0;
+    }
   }
 }
 
@@ -78,6 +92,10 @@
     font-size: 2.4rem;
     top: 20px;
   }
+  @include media-mobile-576 {
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+  }
 }
 
 .our-cases-slide__button-wrapper {
@@ -100,6 +118,10 @@
     top: 88px;
     width: 98%;
     left: 1%;
+  }
+  @include media-mobile-576 {
+    top: 63px;
+    height: 47px;
   }
 
   .nav-item {
@@ -135,6 +157,9 @@
       top: 135px;
       left: 0px;
     }
+    @include media-mobile-576 {
+      display: none;
+    }
   }
 
   .our-cases-slide__info-text {
@@ -149,6 +174,9 @@
     }
     @include media-desktop-900 {
       margin: 10px 0 0 175px;
+    }
+    @include media-mobile-576 {
+      margin: 83px 0 0 0;
     }
   }
 }

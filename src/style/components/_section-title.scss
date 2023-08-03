@@ -12,10 +12,6 @@
   @include font-primary($size: 7rem, $weight: 700);
   text-transform: uppercase;
 
-  &_colored {
-    color: $color-text-section-title-colored;
-  }
-
   @include media-desktop-1900 {
     font-size: 6rem;
   }
@@ -24,6 +20,23 @@
   }
   @include media-desktop-900 {
     font-size: 3.2rem;
+  }
+  @include media-mobile-576 {
+    font-size: 2.8rem;
+    line-height: 3rem;
+  }
+
+  &_colored {
+    color: $color-text-section-title-colored;
+  }
+
+  &_breakpoits {
+    @include media-mobile-576 {
+      display: block;
+      color: $color-text-section-title-colored;
+      font-size: 2rem;
+      line-height: 2.4rem;
+    }
   }
 }
 
@@ -43,6 +56,10 @@
     font-size: 3rem;
     line-height: 3rem;
   }
+  @include media-mobile-576 {
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+  }
 
   &_bold {
     text-transform: uppercase;
@@ -56,6 +73,12 @@
       font-size: 3.2rem;
       margin-top: -9px;
       line-height: 4rem;
+    }
+    @include media-mobile-576 {
+      font-size: 2.8rem;
+      line-height: 3.3rem;
+      font-weight: 600;
+      padding-top: 13px;
     }
   }
 }

@@ -10,17 +10,39 @@
     width: 100%;
     left: -10px;
   }
+  @include media-mobile-576 {
+    left: 0px;
+    margin-left: 0px;
+  }
 
   .swiper-our-cases__wrapper {
     gap: 25px;
     @include media-desktop-900 {
       gap: 0;
     }
+
+    .swiper-our-cases__slide {
+      @include media-desktop-900 {
+        @include flex ($flow: column nowrap, $justify: space-between);
+      }
+    }
   }
 
-  .swiper-button-next {
-    @include media-desktop-900 {
-      right: 0px;
+  .swiper-button {
+    @include media-mobile-576 {
+      top: 90%;
+    }
+
+    &-next {
+      @include media-desktop-900 {
+        right: 0px;
+      }
+    }
+
+    &-prev {
+      @include media-mobile-576 {
+        left: 0px;
+      }
     }
   }
 }

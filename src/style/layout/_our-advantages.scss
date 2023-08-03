@@ -4,6 +4,9 @@
   @include media-desktop-900 {
     min-height: 689px;
   }
+  @include media-mobile-576 {
+    
+  }
 
   .our-advantages-wrapper {
     padding: 100px 0 50px 0;
@@ -13,6 +16,9 @@
     }
     @include media-desktop-900 {
       padding: 50px 1% 10px 1%;
+    }
+    @include media-mobile-576 {
+      padding: 30px 2% 30px 2%;
     }
 
     .our-advantages__tabs {

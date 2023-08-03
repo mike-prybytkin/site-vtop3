@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Raleway:wght@400;700&family=Yantramanav:wght@700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Raleway:wght@400;600;700&family=Yantramanav:wght@700&display=swap"
     rel="stylesheet">
   <link rel="icon" type="image/x-icon" href="./assets/favicon/favico.svg">
   <title>Услуги интернет маркетинга</title>
@@ -16,7 +16,7 @@
     <section class="header__top">
       <div class="container-xxl">
         <div class="row justify-content-between pe-4">
-          <div class="burger-button col-1 align-self-center ms-4">
+          <div class="burger-button col-1 align-self-center ms-sm-4">
             <button class="navbar-toggler mt-2" type="button" data-bs-toggle="collapse"
               data-bs-target="#navbarBurgerMenu" aria-controls="navbarBurgerMenu" aria-expanded="false"
               aria-label="Toggle navigation">
@@ -844,12 +844,18 @@
   </header>
   <main class="main">
     <section class="certified-partners">
-      <h2 class="certified-partners__title section-title">мы являемся сертифицированными партнёрами</h2>
+      <h2 class="certified-partners__title section-title">
+        мы являемся
+        <span class="section-title_breakpoits">
+          сертифицированными партнёрами
+        </span>
+      </h2>
       <div class="certified-partners__links">
-        <a class="certified-partners__link" href="https://www.google.com/partners/agency?id=2851488653" target="_blank">
+        <a class="certified-partners__link certified-partners__link_google"
+          href="https://www.google.com/partners/agency?id=2851488653" target="_blank">
           <img src="./assets/png/partners/google.png" alt="google">
         </a>
-        <a class="certified-partners__link" href="https://hoster.by/" target="_blank">
+        <a class="certified-partners__link certified-partners__link_hoster" href="https://hoster.by/" target="_blank">
           <img src="./assets/png/partners/hoster-by.png" alt="hoster.by">
         </a>
       </div>
@@ -1129,7 +1135,7 @@
             <div class="swiper-wrapper swiper-our-cases__wrapper">
 
               <div class="swiper-our-cases__slide swiper-slide our-cases-slide">
-                <div class="row justify-content-between">
+                <div class="row justify-content-between our-cases-slide__wrapper">
                   <div class="col-4 our-cases-slide__img-wrapper">
                     <img class="our-cases-slide__img" src="./assets/png/our-cases-slider/our-cases-example.png"
                       alt="our-cases-example">
@@ -1162,10 +1168,12 @@
                     <div class="tab-content" id="ex1-content">
                       <div class="tab-pane fade show active" id="ex1-tabs-1" role="tabpanel"
                         aria-labelledby="ex1-tab-1">
-                        <div class="funnel-tab row justify-content-between our-cases-slide__info">
+                        <div
+                          class="funnel-tab row justify-content-center justify-content-sm-between our-cases-slide__info">
                           <img class="our-cases-slide__info-img col-4"
                             src="./assets/png/our-cases-slider/our-cases-graphic.png" alt="our-cases-graphic">
-                          <div class="col-8 d-flex flex-column justify-content-between ps-5 our-cases-slide__info-text">
+                          <div
+                            class="col-12 col-sm-8 d-flex flex-column justify-content-between ps-sm-5 our-cases-slide__info-text">
                             <div class="funnel-tab-info">
                               <i class="fa fa-male funnel-tab-info__ico"></i>
                               <span class="funnel-tab__number">2900</span>
@@ -1182,7 +1190,8 @@
                               <p class="funnel-tab-info__comment">продаж сделал клиент</p>
                             </div>
                           </div>
-                          <div class="row funnel-tab-income justify-content-start gap-4 gap-xxl-5 flex-nowrap">
+                          <div
+                            class="row funnel-tab-income justify-content-center justify-content-sm-start gap-4 gap-xxl-5 flex-sm-nowrap">
                             <div class="col-xxl-4 col-6  d-flex gap-4 funnel-tab-income__card">
                               <i class="fa fa-money-bill funnel-tab-income__ico align-self-center"></i>
                               <div class="col">
@@ -1211,7 +1220,7 @@
                           <img class="graphic-tab__img" src="./assets/png/our-cases-slider/graphic.png" alt="graphic">
                           <div class="graphic-tab__info mt-4 d-flex justify-content-around gap-4">
                             <div
-                              class="graphic-tab-card graphic-tab-card_visitors d-flex justify-content-start gap-xxl-5 gap-1">
+                              class="graphic-tab-card graphic-tab-card_visitors d-flex justify-content-start gap-xxl-5 gap-4 gap-sm-1">
                               <i class="fa fa-male graphic-tab-card__ico"></i>
                               <div class="graphic-tab-card__info">
                                 <h5 class="graphic-tab-card__title">Посетители</h5>
@@ -1228,7 +1237,7 @@
                               </div>
                             </div>
                             <div
-                              class="graphic-tab-card graphic-tab-card_request d-flex justify-content-start gap-xxl-5 gap-1">
+                              class="graphic-tab-card graphic-tab-card_request d-flex justify-content-start gap-xxl-5 gap-4 gap-sm-1">
                               <i class="fa fa-envelope graphic-tab-card__ico"></i>
                               <div class="graphic-tab-card__info">
                                 <h5 class="graphic-tab-card__title">Заявки</h5>
@@ -1245,7 +1254,7 @@
                               </div>
                             </div>
                             <div
-                              class="graphic-tab-card graphic-tab-card_sales d-flex justify-content-start gap-xxl-5 gap-1">
+                              class="graphic-tab-card graphic-tab-card_sales d-flex justify-content-start gap-xxl-5 gap-4 gap-sm-1">
                               <i class="fa fa-money-bill graphic-tab-card__ico"></i>
                               <div class="graphic-tab-card__info">
                                 <h5 class="graphic-tab-card__title">Продажи</h5>
@@ -1266,7 +1275,7 @@
                       </div>
                       <div class="tab-pane fade" id="ex1-tabs-3" role="tabpanel" aria-labelledby="ex1-tab-3">
                         <div class="numbers-tab mt-5">
-                          <div class="row">
+                          <div class="row numbers-tab__text-info">
                             <div class="col d-flex">
                               <div class="numbers-tab__announce numbers-tab__announce_problem">
                                 <i class="fa fa-times numbers-tab__announce-ico"></i>Проблема:
@@ -1631,8 +1640,11 @@
           <div class="swiper-button swiper-button_colored swiper-button-prev"></div>
         </div>
         <div class="mention__promo">
-          Для нас хороший сайт — тот, который принял заказчик. Мы знаем, что вы, как никто другой, заинтересованы
-          в успешном результате и хотите, чтобы ваша компания имела своё собственное запоминающееся лицо.
+          Для нас
+          <span class="mention-text-mobile"> хороший логотип </span>
+          <span class="mention-text-tablet"> хороший сайт </span>
+          — тот, который принял заказчик. Мы знаем, что вы, как никто другой, заинтересованы
+          в успешном результате и хотите, чтобы ваша компания имела своё собственное запоминающееся лицо.
         </div>
         <div class="mention__btn">
           <button class="button button_oval-colored">заказать сео</button>

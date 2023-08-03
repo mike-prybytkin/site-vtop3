@@ -17,6 +17,10 @@
     @include media-desktop-900 {
       padding: 50px 1% 30px 1%;
     }
+    @include media-mobile-576 {
+      text-align: center;
+      padding: 15px 2%;
+    }
 
     .footer__col {
       max-width: 300px;
@@ -73,6 +77,10 @@
   font-size: 1.4rem;
 
   &_details {
+    @include media-mobile-576 {
+      order: 2;
+    }
+
     & > div {
       margin: 12px 0;
       & > p {
@@ -98,6 +106,10 @@
     @include media-desktop-900 {
       font-size: 1.4rem;
     }
+    @include media-mobile-576 {
+      order: 1;
+    }
+
     & > div {
       margin: 14px 0;
     }
@@ -123,6 +135,9 @@
     @include media-desktop-900 {
       font-size: 1.4rem;
     }
+    @include media-mobile-576 {
+      order: 3;
+    }
     & > div {
       margin-bottom: 26px;
     }
@@ -141,6 +156,7 @@
     display: none;
     @include media-desktop-900 {
       display: block;
+      margin: auto;
     }
   }
 }

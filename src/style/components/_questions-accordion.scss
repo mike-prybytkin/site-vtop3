@@ -21,6 +21,9 @@
           @include media-desktop-900 {
             font-size: 2.4rem;
           }
+          @include media-mobile-576 {
+            font-size: 1.6rem;
+          }
 
           &:focus {
             border: none;
@@ -53,6 +56,10 @@
       font-size: 1.6rem;
       line-height: 1.8rem;
       padding-left: 60px;
+    }
+    @include media-mobile-576 {
+      font-size: 1.4rem;
+      padding: 20px 0 0 30px;
     }
   }
 }

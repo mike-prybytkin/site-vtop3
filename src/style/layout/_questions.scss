@@ -14,10 +14,16 @@
     @include media-desktop-900 {
       padding: 50px 1% 10px 1%;
     }
+    @include media-mobile-576 {
+      padding: 30px 2% 30px 2%;
+    }
 
     .questions__title {
       text-align: center;
       margin: auto;
+      @include media-mobile-576 {
+        text-align: left;
+      }
     }
 
     .questions__accordion {
@@ -25,6 +31,9 @@
       padding-bottom: 30px;
       @include media-desktop-900 {
         margin-top: 0px;
+      }
+      @include media-mobile-576 {
+        padding-bottom: 0px;
       }
     }
   }

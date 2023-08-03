@@ -6,6 +6,11 @@
   text-align: center;
   background: $color-bg-tablet-contacts;
   padding: 0;
+  @include media-mobile-576 {
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+  }
 }
 
 .contacts {
@@ -28,6 +33,12 @@
       width: auto;
       right: 70px;
       align-items: center;
+    }
+    @include media-mobile-576 {
+      gap: 5px;
+      top: 5px;
+      justify-content: start;
+      right: 9px;
     }
   }
   .fa {

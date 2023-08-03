@@ -5,10 +5,22 @@
   @include media-desktop-900 {
     padding-top: 115px;
   }
+  @include media-mobile-576 {
+    padding-top: 60px;
+  }
 
   .graphic-tab__img {
     @include media-desktop-1900 {
     width: 100%;
+    }
+    @include media-mobile-576 {
+      display: none;
+    }
+  }
+
+  .graphic-tab__info {
+    @include media-mobile-576 {
+      flex-direction: column;
     }
   }
 }
@@ -27,6 +39,9 @@
     width: 140px;
     height: 65px;
     font-size: 0.8rem;
+  }
+  @include media-mobile-576 {
+    width: 100%;
   }
 
   .graphic-tab-card__ico {

@@ -10,6 +10,10 @@
     min-height: 345px;
     padding: 35px 20px;
   }
+  @include media-mobile-576 {
+    padding: 35px 20px 20px 20px;
+    min-height: 335px;
+  }
 
   .price-card__title {
     height: 80px;
@@ -20,6 +24,10 @@
       font-size: 1.6rem;
       line-height: 1.9rem;
       height: 50px;
+    }
+    @include media-mobile-576 {
+      height: 30px;
+      line-height: 1.4rem;
     }
   }
 
@@ -37,6 +45,13 @@
         font-weight: 700;
         border-bottom: 4px solid $color-bg-oval-button;
       }
+
+      & > div {
+        @include media-mobile-576 {
+          padding: 0;
+          text-align: left;
+        }
+      }
     }
   }
 
@@ -45,6 +60,10 @@
     @include font-primary($size: 2.4rem, $color: $color-text-dark, $weight: 700);
     @include media-desktop-900 {
       font-size: 1.6rem;
+    }
+    @include media-mobile-576 {
+      line-height: 60px;
+      font-size: 2rem;
     }
 
     &_free {

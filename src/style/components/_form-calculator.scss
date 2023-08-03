@@ -7,6 +7,9 @@
       line-height: 2.3rem;
       margin-bottom: 11px;
     }
+    @include media-mobile-576 {
+      height: 47px;
+    }
   }
 
   .form-calculator__input-group {
@@ -14,6 +17,9 @@
     height: 84px;
     @include media-desktop-1200 {
       width: 400px;
+    }
+    @include media-mobile-576 {
+      width: 100%;
     }
 
     .form-calculator__input {
@@ -29,6 +35,9 @@
       &:first-of-type {
         border-radius: 30px !important;
         margin-right: 30px;
+        @include media-mobile-576 {
+          margin-right: 0;
+        }
       }
 
       &:last-of-type {
@@ -41,6 +50,9 @@
     margin-top: 32px;
     @include media-desktop-900 {
       margin-top: 20px;
+    }
+    @include media-mobile-576 {
+      margin-top: 30px;
     }
 
     &_close {

@@ -16,6 +16,9 @@
     @include media-desktop-900 {
       padding: 50px 1% 10px 1%;
     }
+    @include media-mobile-576 {
+      padding: 45px 2% 30px 2%;
+    }
 
     .team__title {
       text-align: center;
@@ -23,6 +26,10 @@
       margin: auto;
       @include media-desktop-900 {
         max-width: 450px;
+      }
+      @include media-mobile-576 {
+        text-align: left;
+        width: 100%;
       }
     }
 
