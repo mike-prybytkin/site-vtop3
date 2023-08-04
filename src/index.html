@@ -810,7 +810,7 @@
               </div>
             </div>
             <button class="promo__order-btn button button_oval-colored" data-bs-toggle="modal"
-              data-bs-target="#modal-window">Заказать продвижение</button>
+              data-bs-target="#modal-window-dev">Заказать продвижение</button>
           </div>
 
           <div class="col-4 align-self-end promo__col promo__col_2">
@@ -886,7 +886,7 @@
               </div>
               <div class="price-card__price price-card__price_free">Бесплатно</div>
               <button class="price-card__btn button button_oval-colored" data-bs-toggle="modal"
-                data-bs-target="#modal-window">Выбрать пакет</button>
+                data-bs-target="#modal-window-contact-us">Выбрать пакет</button>
             </div>
             <div class="price-card">
               <h4 class="price-card__title">Продвижение интернет-магазина</h4>
@@ -906,7 +906,7 @@
               </div>
               <div class="price-card__price">от 650 руб/мес</div>
               <button class="price-card__btn button button_oval-colored" data-bs-toggle="modal"
-                data-bs-target="#modal-window">Выбрать пакет</button>
+                data-bs-target="#modal-window-contact-us">Выбрать пакет</button>
             </div>
             <div class="price-card">
               <h4 class="price-card__title">Продвижение сайта услуг (корпоративный сайт)</h4>
@@ -926,7 +926,7 @@
               </div>
               <div class="price-card__price">от 460 руб/мес</div>
               <button class="price-card__btn button button_oval-colored" data-bs-toggle="modal"
-                data-bs-target="#modal-window">Выбрать пакет</button>
+                data-bs-target="#modal-window-contact-us">Выбрать пакет</button>
             </div>
             <div class="price-card">
               <h4 class="price-card__title">SEO-Аудит</h4>
@@ -946,7 +946,7 @@
               </div>
               <div class="price-card__price">от 300 руб/мес</div>
               <button class="price-card__btn button button_oval-colored" data-bs-toggle="modal"
-                data-bs-target="#modal-window">Выбрать пакет</button>
+                data-bs-target="#modal-window-contact-us">Выбрать пакет</button>
             </div>
             <div class="price-card">
               <h4 class="price-card__title">Разовые работы</h4>
@@ -966,7 +966,7 @@
               </div>
               <div class="price-card__price">от 120 руб/мес</div>
               <button class="price-card__btn button button_oval-colored" data-bs-toggle="modal"
-                data-bs-target="#modal-window">Выбрать пакет</button>
+                data-bs-target="#modal-window-contact-us">Выбрать пакет</button>
             </div>
 
           </div>
@@ -1333,7 +1333,8 @@
                   </div>
                 </div>
                 <div class="our-cases-slide__modal-btn d-flex justify-content-center">
-                  <button class="button button_oval-colored" data-bs-toggle="modal" data-bs-target="#modal-window">Хочу
+                  <button class="button button_oval-colored" data-bs-toggle="modal"
+                    data-bs-target="#modal-window-dev">Хочу
                     также</button>
                 </div>
               </div>
@@ -1531,7 +1532,8 @@
                   </div>
                 </div>
                 <div class="our-cases-slide__modal-btn d-flex justify-content-center">
-                  <button class="button button_oval-colored" data-bs-toggle="modal" data-bs-target="#modal-window">Хочу
+                  <button class="button button_oval-colored" data-bs-toggle="modal"
+                    data-bs-target="#modal-window-dev">Хочу
                     так же</button>
                 </div>
               </div>
@@ -2092,17 +2094,123 @@
   </footer>
 
   <!-- Modal -->
-  <div class="modal fade" id="modal-window" tabindex="-1" aria-labelledby="modal-window-label" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
+  <div class="modal modal_dev fade" id="modal-window-dev" tabindex="-1" aria-labelledby="modal-window-dev-label"
+    aria-hidden="true">
+    <div class="modal-dialog modal-sm modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="modal-window-label">Модальное окно</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
             <i class="fa fa-times"></i>
           </button>
         </div>
         <div class="modal-body">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate, a.
+          <div class="modal__form-wrapper">
+            <h5 class="modal__form-title">Будем рады помочь!</h5>
+            <form class="modal__form modal__form_dev form-modal needs-validation" novalidate>
+
+              <label for="modalUserName" class="form-label form-modal__label">
+                Ваше имя
+              </label>
+              <div class="input-group form-modal__input-group">
+                <input type="text" class="form-control form-modal__input" id="modalUserName" placeholder="Введите имя"
+                  required>
+              </div>
+
+              <label for="modalUserPhone" class="form-label form-modal__label">
+                Телефон
+              </label>
+              <div class="input-group form-modal__input-group">
+                <input type="text" class="form-control form-modal__input" id="modalUserPhone"
+                  placeholder="Введите телефон" required>
+              </div>
+
+              <label for="modalUserEmail" class="form-label form-modal__label">
+                Адрес сайта
+              </label>
+              <div class="input-group form-modal__input-group">
+                <input type="text" class="form-control form-modal__input" id="modalUserEmail"
+                  placeholder="Введите адрес сайта" required>
+              </div>
+
+              <div class="form-check form-modal__check">
+                <input class=" form-check-input form-modal__check-input" type="checkbox" id="modalUserCheckbox" checked>
+                <label class="form-check-label form-modal__label" for="modalUserCheckbox">
+                  Нажимая кнопку отправить заявку, даю согласие на обработку <a href="https://vtop-3.ru/privacy-policy">
+                    персональных данных*</a>
+                </label>
+              </div>
+              <div class="text-center">
+                <button class="button button_oval-colored form-modal__btn" type="submit">Отправить заявку</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal modal_contact-us fade" id="modal-window-contact-us" tabindex="-1"
+    aria-labelledby="modal-window-contact-us-label" aria-hidden="true">
+    <div class="modal-dialog modal-sm modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+            <i class="fa fa-times"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="modal__form-wrapper">
+            <h5 class="modal__form-title">Будем рады помочь!</h5>
+            <form class="modal__form modal__form_contacts form-modal needs-validation" novalidate>
+
+              <label for="modalUserNameContacts" class="form-label form-modal__label">
+                Ваше имя
+              </label>
+              <div class="input-group form-modal__input-group">
+                <input type="text" class="form-control form-modal__input" id="modalUserNameContacts"
+                  placeholder="Введите имя" required>
+              </div>
+
+              <label for="modalUserPhoneContacts" class="form-label form-modal__label">
+                Телефон
+              </label>
+              <div class="input-group form-modal__input-group">
+                <input type="text" class="form-control form-modal__input" id="modalUserPhoneContacts"
+                  placeholder="Введите телефон" required>
+              </div>
+
+              <div class="form-check form-modal__check">
+                <input class=" form-check-input form-modal__check-input" type="checkbox" id="modalUserCheckboxContacts"
+                  checked>
+                <label class="form-check-label form-modal__label" for="modalUserCheckboxContacts">
+                  Нажимая кнопку отправить заявку, даю согласие на обработку <a href="https://vtop-3.ru/privacy-policy">
+                    персональных данных*</a>
+                </label>
+              </div>
+              <div class="text-center">
+                <button class="button button_oval-colored form-modal__btn" type="submit">Отправить заявку</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal-window-thanks" tabindex="-1" aria-labelledby="modal-window-thanks-label"
+    aria-hidden="true">
+    <div class="modal-dialog modal-sm modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+            <i class="fa fa-times"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="modal__form-wrapper">
+            <h5 class="modal__form-title">Спасибо!</h5>
+            <div class="text-center">Мы скоро с Вами свяжемся!</div>
+          </div>
         </div>
       </div>
     </div>

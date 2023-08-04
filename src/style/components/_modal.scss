@@ -1,14 +1,33 @@
 .modal {
+  .modal-dialog {
+    justify-content: center;
+  }
+
   .modal-content {
-    background: $color-3-bg-sections;
     color: $color-text-light;
     font-size: 1.6rem;
+    background: linear-gradient( 35deg, rgba(86, 41, 90, 1) 0%, rgba(92, 107, 192, 1) 100% );
+    width: 300px;
+    min-height: 100px;
+    border-radius: 10px;
+    @include media-mobile-576 {
+      width: 240px;
+      font-size: 1.4rem;
+    }
 
     .modal-header {
+      border-bottom: none;
+      @include media-mobile-576 {
+        padding-bottom: 0px;
+      }
+
       .modal-title {
         width: 100%;
         text-align: center;
         font-size: 2rem;
+        @include media-mobile-576 {
+          font-size: 1.6rem;
+        }
       }
 
       .btn-close {
@@ -17,14 +36,14 @@
         font-size: 2.6rem;
         line-height: 1rem;
         color: $color-text-light;
+        opacity: 1;
         width: 24px;
         height: 24px;
         border-radius: 50%;
         border: 1px solid transparent;
 
         &:hover {
-          color: $color-contacts-ico;
-          border: 1px solid $color-contacts-ico;
+          transform: scale(1.02);
         }
 
         &:focus {
@@ -34,7 +53,25 @@
     }
 
     .modal-body {
-      padding: 15px;
+      padding: 0 15px 35px 15px;
+      @include media-mobile-576 {
+        padding: 0 15px 30px 15px;
+      }
+    }
+  }
+
+  .modal__form-title {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+  }
+}
+
+#modal-window-thanks {
+  .modal__form-title {
+    margin-bottom: 25px;
+    @include media-mobile-576 {
+      margin-bottom: 5px;
     }
   }
 }

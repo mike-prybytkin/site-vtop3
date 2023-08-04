@@ -9,6 +9,7 @@ import showHideContacts from './script/show-hide-contacts/show-hide-contacts';
 import toggleLanguage from './script/toggle-language/toggle-language';
 import initFormCalculator from './script/form-calculator/init-form-calculator';
 import burgerMenu from './script/burger-menu/burger-menu';
+import modalWindowInit from './script/modal-window-form/modal-window-init';
 
 promoSwiper();
 ourCasesSwiper();
@@ -18,5 +19,6 @@ showHideContacts();
 toggleLanguage();
 initFormCalculator();
 burgerMenu();
+modalWindowInit();
 
 setTimeout(() => advantagesTabsFirstLoad(), 0);

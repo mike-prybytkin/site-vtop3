@@ -23,6 +23,9 @@
         width: 100%;
         background: $color-1-bg-sections;
       }
+      @include media-mobile-576 {
+        min-height: 384px;
+      }
     }
     &_2 {
       z-index: 1;

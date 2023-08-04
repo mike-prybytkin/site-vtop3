@@ -1,0 +1,24 @@
+.was-validated .form-control:invalid {
+  border: 2px solid $color-form-not-validate;
+}
+
+
+form .form-control:focus {
+  border: 2px solid $color-form-focus;
+  box-shadow: none;
+}
+
+.was-validated .form-check-input:valid:checked, 
+.form-check-input.is-valid:checked {
+  background-color: transparent !important;
+}
+
+.was-validated .form-check-input:valid ~ .form-check-label, 
+.form-check-input.is-valid ~ .form-check-label {
+  color: inherit !important;
+}
+
+.was-validated .form-control:valid:focus, 
+.form-control.is-valid:focus {
+  box-shadow: none !important;
+}

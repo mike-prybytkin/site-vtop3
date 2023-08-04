@@ -4,6 +4,7 @@
 
 @import './base/base';
 @import './base/normalize';
+@import './base/form-validated';
 
 @import './components/logo';
 @import './components/contacts';
@@ -32,6 +33,7 @@
 @import './components/company-contacts';
 @import './components/dropdown-calculator';
 @import './components/modal';
+@import './components/modal-form-for-dev';
 @import './components/burger-button';
 @import './components/navbar-burger-menu';
  

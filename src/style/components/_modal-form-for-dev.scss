@@ -1,0 +1,81 @@
+.form-modal {
+  color: $color-text-light;
+  font-size: 1.4rem;
+  @include media-mobile-576 {
+    font-size: 0.8rem;
+  }
+
+  .form-modal__label {
+    margin-top: 10px;
+  }
+
+  .form-modal__input {
+    height: 38px;
+    border-radius: 30px;
+    padding: 0 15px;
+    font-size: 1.4rem;
+    @include media-mobile-576 {
+      height: 20px;
+      font-size: 0.8rem;
+    }
+
+    &::placeholder {
+      color: $color-text-lang;
+    }
+  }
+
+  .form-modal__check {
+    margin-top: 15px;
+    @include flex($flow: row nowrap);
+
+    .form-check-label.form-modal__label {
+      width: 235px;
+      font-size: 12px;
+      @include media-mobile-576 {
+        font-size: 0.8rem;
+        line-height: 1rem;
+        width: 170px;
+      }
+
+      a {
+        color:  $color-light;
+      }
+    }
+
+    .form-modal__check-input {
+      width: 24px;
+      height: 24px;
+      background: transparent;
+      border: solid 1px $color-text-light;
+      @include media-mobile-576 {
+        width: 20px;
+        height: 20px;
+      }
+
+      &:checked {
+        background-image: url('../assets/png/checked.png');
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    .form-modal__label {
+      font-size: 1.4rem;
+      margin: 0 0 0 10px;
+      cursor: pointer;
+      line-height: 1.6rem;
+    }
+  }
+
+  .form-modal__btn {
+    margin-top: 20px;
+    font-size: 1.8rem;
+    @include media-mobile-576 {
+      font-size: 1.4rem;
+    }
+  }
+}
