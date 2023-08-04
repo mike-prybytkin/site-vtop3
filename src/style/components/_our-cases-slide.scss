@@ -126,7 +126,7 @@
     border: none !important;
   }
 
-  & > li {
+  & > li.nav-item {
     @include media-mobile-576 {
       display: none;
     }
