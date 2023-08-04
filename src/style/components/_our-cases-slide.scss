@@ -133,7 +133,13 @@
   }
 
   .nav-item {
-    width: 30%;
+    width: 31%;
+    @include media-desktop-1200 {
+      width: 32%;
+    }
+    @include media-desktop-900 {
+      width: 30%;
+    }
   }
 }
 
