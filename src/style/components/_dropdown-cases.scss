@@ -1,0 +1,57 @@
+.dropdown-cases {
+  width: 260px;
+  height: 48px;
+  font-size: 1.4rem;
+  background: $color-bg-buttons-our-cases;
+  border-radius: 24px;
+  text-align: left;
+  line-height: 48px;
+
+
+  .dropdown-cases__btn {
+    color:  $color-text-dark;
+    text-decoration: none;
+    padding: 10px 170px 10px 15px;
+
+    &::after {
+      position: absolute;
+      right: 5%;
+      top: 45%;
+      color: $color-header-separator;
+      font-size: 2rem;
+    }
+  }
+
+  .dropdown-cases__list {
+    width: 260px;
+    background: $color-bg-buttons-our-cases;
+    border-radius: 30px !important;
+    top: 12px !important;
+    height: 74px;
+    padding: 0;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      border-bottom: 1px solid $color-header-separator;
+      width: 100%;
+    }
+
+    .button_cases-mobile {
+      font-size: 1.4rem;
+      color: $color-text-placeholder !important;
+      width: 100%;
+      background: transparent !important;
+      padding: 0 0 0 20px;
+      width: 270px;
+      border: none !important;
+      height: 37px;
+      line-height: 37px;
+      &:hover,
+      &:focus {
+        border: none !important;
+      }
+    }
+  }
+}

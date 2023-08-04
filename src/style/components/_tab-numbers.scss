@@ -1,5 +1,6 @@
 .numbers-tab {
   @extend %scrollbar;
+  overflow-x: hidden;
   font-size: 1.6rem;
   @include media-desktop-1900 {
     padding-top: 170px;
@@ -9,6 +10,7 @@
     font-size: 0.7rem;
   }
   @include media-mobile-576 {
+    overflow-x: auto;
   }
 
   .numbers-tab__text-info {
@@ -18,8 +20,10 @@
   }
 
   .numbers-tab-table {
-    width: 600px;
-    padding-right: 1px;
+    @include media-mobile-576 {
+      width: 600px;
+      padding-right: 1px;
+    }
   }
 
   .numbers-tab__announce {

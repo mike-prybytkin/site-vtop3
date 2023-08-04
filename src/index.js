@@ -10,6 +10,7 @@ import toggleLanguage from './script/toggle-language/toggle-language';
 import initFormCalculator from './script/form-calculator/init-form-calculator';
 import burgerMenu from './script/burger-menu/burger-menu';
 import modalWindowInit from './script/modal-window-form/modal-window-init';
+import selectOurCasesTab from './script/cases-tab/cases-tab';
 
 promoSwiper();
 ourCasesSwiper();
@@ -20,5 +21,6 @@ toggleLanguage();
 initFormCalculator();
 burgerMenu();
 modalWindowInit();
+selectOurCasesTab();
 
 setTimeout(() => advantagesTabsFirstLoad(), 0);

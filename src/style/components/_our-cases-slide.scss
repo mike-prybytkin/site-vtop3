@@ -122,6 +122,14 @@
   @include media-mobile-576 {
     top: 63px;
     height: 47px;
+    background: none;
+    border: none !important;
+  }
+
+  & > li {
+    @include media-mobile-576 {
+      display: none;
+    }
   }
 
   .nav-item {

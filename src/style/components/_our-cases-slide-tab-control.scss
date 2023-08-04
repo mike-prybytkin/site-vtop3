@@ -1,0 +1,12 @@
+.our-cases-slide__buttons-mobile {
+  display: none;
+  @include media-mobile-576 {
+    display: block;
+  }
+}
+
+.nav-item_tab-control {
+  &.active {
+    display: none;
+  }
+}

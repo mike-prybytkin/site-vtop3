@@ -3,6 +3,10 @@
   outline: none;
   background: transparent;
   @extend %transition;
+  &:focus,
+  &:hover {
+    outline: none;
+  }
 }
 
 .button_oval-colored {
