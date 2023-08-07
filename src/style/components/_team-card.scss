@@ -29,7 +29,7 @@
   .team-card__content {
     position: relative;
     text-align: center;
-    @include flex ($align: end, $justify: start);
+    @include flex ($align: end, $justify: center);
     height: 100%;
   
     .team-card__img {
@@ -50,6 +50,7 @@
       position: absolute;
       bottom: 90px;
       font-size: 2rem;
+      left: 0px;
       @include media-desktop-900 {
         font-size: 1.2rem;
         bottom: 16px;
