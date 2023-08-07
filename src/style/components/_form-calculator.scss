@@ -23,7 +23,6 @@
     }
 
     .form-calculator__input {
-      border: none;
       outline: none;
       border-radius: 30px;
       font-size: 2.4rem;
@@ -31,8 +30,14 @@
       @include media-desktop-900 {
         font-size: 2rem;
       }
+      @include media-desktop-1200 {
+        margin-right: 30px;
+      }
+      @include media-mobile-576 {
+        margin-right: 0;
+      }
 
-      &:first-of-type {
+      &_name {
         border-radius: 30px !important;
         margin-right: 30px;
         @include media-mobile-576 {
@@ -67,4 +72,8 @@
       display: block;
     }
   }
+}
+
+.form-calculator__input {
+  border: solid 1px $color-text-light;
 }

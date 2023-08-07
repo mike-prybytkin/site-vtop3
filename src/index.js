@@ -11,6 +11,7 @@ import initFormCalculator from './script/form-calculator/init-form-calculator';
 import burgerMenu from './script/burger-menu/burger-menu';
 import modalWindowInit from './script/modal-window-form/modal-window-init';
 import selectOurCasesTab from './script/cases-tab/cases-tab';
+import initFormOrder from './script/form-order/form-order';
 
 promoSwiper();
 ourCasesSwiper();
@@ -22,5 +23,6 @@ initFormCalculator();
 burgerMenu();
 modalWindowInit();
 selectOurCasesTab();
+initFormOrder();
 
 setTimeout(() => advantagesTabsFirstLoad(), 0);

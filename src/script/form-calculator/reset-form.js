@@ -25,6 +25,7 @@ const resetForm = () => {
     closeBtn.style.display = 'none';
     submitBtn.style.display = 'block';
     calculatorForm.reset();
+    calculatorForm.classList.remove('was-validated');
     formCalculatorProgressBar(1);
   });
 };

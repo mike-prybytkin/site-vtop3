@@ -2,7 +2,7 @@
   width: 580px;
   height: 84px;
   @include media-desktop-1200 {
-    width: 400px;
+    width: 370px;
   }
   @include media-mobile-576 {
     width: 100%;
@@ -20,6 +20,7 @@
     background: $color-light;
     text-decoration: none;
     color: $color-text-placeholder;
+    line-height: 4.4rem;
 
     &::after {
       position: absolute;
@@ -36,7 +37,7 @@
     border-radius: 30px;
     padding: 20px 25px;
     @include media-desktop-1200 {
-      width: 400px;
+      width: 370px;
     }
     @include media-mobile-576 {
       width: 98%;

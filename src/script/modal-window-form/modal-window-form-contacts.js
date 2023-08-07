@@ -13,6 +13,8 @@ const modalWindowFormContacts = () => {
       modalForm.reset();
       modalForm.classList.remove('was-validated');
       openThankModalWindow();
+    } else {
+      event.preventDefault();
     }
   });
 };
